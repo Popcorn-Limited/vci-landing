@@ -46,7 +46,7 @@ export default function BuildingSection() {
 
               <div className="flex flex-col mt-20 justify-end items-end">
                 <p className="text-white text-sm mb-4 uppercase">Organizations Supported</p>
-                <div className="flex-row items-center w-fit px-2 gap-x-4 bg-white">
+                <div className="flex-row items-center w-fit px-2 gap-x-4">
                   <img src="/images/icons/GITCOIN.svg" className='h-12' />
                 </div>
               </div>
