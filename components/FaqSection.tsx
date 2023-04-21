@@ -11,7 +11,7 @@ export default function FaqSection() {
         <div className="flex smmd:flex-row flex-col-reverse w-full h-fit">
           <div className="flex-col smmd:w-1/2 w-full mt-18 smmd:mt-0">
             <p className="text-lg mb-2">Frequently Asked Questions</p>
-            <p className="smmd:text-7xl text-4xl leading-none">Empower Your Crypto: Create Positive Impact</p>
+            <p className="text-4xl smmd:text-6xl leading-none">Empower Your Crypto: Create Positive Impact</p>
           </div>
 
           <div className="flex-col flex smmd:w-1/2 w-full items-end">

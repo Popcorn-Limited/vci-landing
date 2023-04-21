@@ -18,7 +18,7 @@ export default function ProductsSection() {
           <ProductDisplay
             number="01"
             title="Sweet Vaults"
-            description="Automated asset startegies that earn yield on your single asset deposits."
+            description="Automated asset strategies that earn yield on your single asset deposits."
             url="/sweet-vaults"
             image={(color) => <CircleBunny color={color} />}
             animateColor="#C391FF"
@@ -27,7 +27,7 @@ export default function ProductsSection() {
           <ProductDisplay
             number="02"
             title="Vaults For Good"
-            description="Vaults that fund public goods with the yield generated from its asset strategies."
+            description="Vaults that fund public goods using a 100% of the yield."
             url=""
             image={(color) => <PointyBunny color={color} />}
             animateColor="#FA5A6E"

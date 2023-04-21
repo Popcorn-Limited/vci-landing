@@ -7,7 +7,7 @@ export default function AuditSection() {
     <section className="flex flex-col items-start w-screen bg-[#F7F7F7] py-24 md:py-52 2xl:max-w-[1800px] 2xl:mx-auto px-6 smmd:px-8 md:px-12 lglaptop:px-20">
       <div className="flex-row w-full h-full gap-x-9 md:flex hidden">
         <div className="w-full flex-col flex">
-          <p className="text-7xl mb-4">Audited</p>
+          <p className="text-6xl mb-4">Audited</p>
           <p className="text-primaryDark">Our smart contract has been audited by the best in the business.</p>
         </div>
         <div className="w-full flex-col flex">

@@ -28,8 +28,8 @@ export default function GitcoinSection() {
 
         <div className="w-full grow flex-col flex justify-start items-start px-6 smmd:px-8 md:px-12 lglaptop:px-20">
           <div id="second-slide-element" className={`transition-transform mt-[80px] smmd:w-[60vw] w-full 2xl:max-w-[1400px] duration-[900ms] ${isVisible ? 'smmd:translate-x-0' : 'smmd:-translate-x-full'}`}>
-            <h1 className="mb-6 leading-[60px] text-white smmd:leading-[72px] font-normal min-h-[80px] text-left text-4xl smmd:text-8xl lglaptop:text-[96px] lglaptop:leading-[90px] smmd:mt-0 ">
-              Build a better future with your Digital Assets
+            <h1 className="mb-6 min-h-[80px] leading-[60px] smmd:leading-[72px] font-normal text-white text-left text-4xl smmd:text-8xl smmd:mt-0">
+              Build a better future with your digital assets
             </h1>
           </div>
         </div>

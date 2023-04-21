@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
         <div className="md:w-6/12 mt-8 md:mt-0">
           <p className="md:w-7/12 text-base font-normal">
-            Popcorn is an audited, non-custodial DeFi wealth manager with yield-generating products that simultaneously fund nonprofit and social impact organizations.
+            Popcorn is an audited, non-custodial DeFi wealth manager with yield-generating products that simultaneously fund nonprofits and social impact organizations.
           </p>
           <div className="flex flex-row items-center justify-between md:justify-start md:space-x-4 mt-4">
             <Link href="https://twitter.com/Popcorn_DAO" passHref>
@@ -80,6 +80,9 @@ export default function Footer() {
         </div>
         <div className="hidden md:flex flex-col space-y-3 text-base">
           <p className="text-base font-medium uppercase">Bug Bounty</p>
+          <Link href="https://immunefi.com/bounty/popcorn/" passHref>
+            Immunifi
+          </Link>
         </div>
       </div>
     </section>

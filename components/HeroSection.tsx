@@ -34,8 +34,8 @@ export default function HeroSection() {
       <section className="relative px-6 smmd:px-8 md:px-12 lglaptop:px-20 smmd:mb-0 items-start w-full overflow-scroll">
         <div className="flex flex-col items-start smmd:h-full smmd:w-full pb-16 smmd:pb-0 mx-auto min-w-480 lg:flex-row">
           <div className=" text-center z-20 smmd:text-left smmd:mx-0 flex flex-col justify-around h-full w-full">
-            <h1 className="mb-6 leading-[60px] smmd:leading-[72px] font-normal min-h-[80px] max-w-[450px] lglaptop:max-w-[900px] smmd:max-w-[700px] text-left text-5xl smmd:text-8xl lglaptop:text-[96px] lglaptop:leading-[104px] smmd:w-1/2 mt-24 smmd:mt-[70px] ">
-              Optimize your yield while funding public goods with Popcorn
+            <h1 className="mb-6 leading-[60px] smmd:leading-[72px] font-normal min-h-[80px] max-w-[450px] lglaptop:max-w-[900px] smmd:max-w-[700px] text-left text-5xl smmd:text-8xl smmd:w-1/2 mt-24 smmd:mt-[70px] ">
+              Optimize your yield while funding public goods with <span className="font-bold">Popcorn</span>
             </h1>
             <div className="w-fit flex mb-48 smmd:mb-36 mt-6">
               <span onMouseLeave={() => setArrowColor('black')} onMouseEnter={() => setArrowColor('white')} className="w-full h-full">
@@ -55,7 +55,7 @@ export default function HeroSection() {
             <div className="flex smmd:flex-row items-start smmd:w-full smmd:justify-between flex-col gap-y-20 mb-16 smmd:mb-24 smmd:items-end">
               <StatusWithLabel
                 label="TVL"
-                content={<p className="text-gray-900 text-8xl mt-4">$ {tvl}</p>}
+                content={<p className="text-gray-900 text-8xl font-normal mt-4">$ {tvl}</p>}
                 infoIconProps={{
                   id: 'idx',
                   title: 'TVL',
@@ -63,7 +63,7 @@ export default function HeroSection() {
                 }}
               />
               <div className="smmd:align-end max-w-[500px] smmd:flex smmd:flex-col smmd:h-full smmd:justify-end">
-                <p className="smmd:text-right text-left text-xl">
+                <p className="text-left text-xl">
                   Popcorn is a yield-optimizing protocol with automated asset strategies that simultaneously fund public goods at no additional cost.
                 </p>
               </div>

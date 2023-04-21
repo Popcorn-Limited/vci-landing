@@ -31,19 +31,19 @@ const Carousel = () => {
     {
       title: "BlockSec",
       content:
-        "Zokyo is an end-to-end security resource that provides distinguishable security auditing and penetration testing services alongside prominent vulnerability assessments.",
+        "BlockSec is dedicated to building blockchain security infrastructure. The team is founded by elite researchers and experienced experts from both academia and industry. They’ve audited 100+ protocols and secured $12B+ asset.",
       color: "bg-[#FA5A6E]",
       image: "blocksec-logo.png"
     },
     {
       title: "Code4rena",
-      content: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      content: "Code4rena is the web3 security auditing league offering on-demand audit contests in which community participants, referred to as wardens, review, audit or analyze smart contract logic in exchange for a bounty.",
       color: "bg-[#9B55FF]",
       image: "c4-logo.png"
     },
     {
       title: `Immunefi`,
-      content: `Immunefi is the leading bug bounty platform for Web3.`,
+      content: `Immunefi is the premier bug bounty platform for smart contracts and DeFi projects, where security researchers review code, disclose vulnerabilities, get paid, and make crypto safer.`,
       color: "bg-[#05BE64]",
       image: "immunifi-logo.png"
     },

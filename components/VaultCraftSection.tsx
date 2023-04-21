@@ -43,7 +43,7 @@ export default function VaultCraftSection() {
 
             <div className="w-full h-fit flex-row flex justify-between items-end 2xl:max-w-[1600px]">
               <div id="slide-in-element" className={`transition-transform mt-[80px] smmd:w-[60vw] 2xl:max-w-[1400px] w-full duration-[1200ms] ${isVisible ? 'smmd:translate-x-0' : 'smmd:-translate-x-full'}`}>
-                <h1 className="mb-6 leading-[60px] text-white smmd:leading-[72px] font-normal min-h-[80px] text-left text-4xl smmd:text-8xl lglaptop:text-[96px] lglaptop:leading-[96px] smmd:mt-0 ">
+                <h1 className="mb-6 font-normal min-h-[80px] text-white leading-[60px] smmd:leading-[72px] text-left text-4xl smmd:text-8xl smmd:mt-0">
                   Easily create custom tailored asset strategies for your crypto with <b>Vaultcraft</b>
                 </h1>
               </div>

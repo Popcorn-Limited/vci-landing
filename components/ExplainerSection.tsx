@@ -3,6 +3,9 @@ import SecondaryActionButton from "./Common/SecondaryActionButton";
 import HeroCards from "./HeroCards";
 import { useState } from "react";
 import Link from "next/link";
+import depositAnim from "./LottieAnimations/deposit.json";
+import doWellAnim from "./LottieAnimations/doWell.json";
+import doGoodAnim from "./LottieAnimations/doGood.json";
 
 export default function ExplainerSection() {
 
@@ -83,7 +86,7 @@ export default function ExplainerSection() {
           onMouseUp={() => handleMouseUp()}
           className={`flex flex-row h-[550px] xl:h-fit max-h-[800px] w-fit overflow-y-hidden overflow-x-auto transition-transform ${move === 1 ? 'translate-x-[-524px] xl:translate-x-[-624px]' : 'translate-x-0'}`}>
           <div className="w-[467px] xl:w-[567px] h-full mr-[24px] shrink-0 cursor-pointer">
-            <video className="w-full h-full cover rounded-3xl" id='video' controls poster='/images/Videocard.svg'>
+            <video className="w-full h-full cover rounded-3xl" id='video' controls poster='/images/explainer_video.svg'>
               <source src="/videos/Popcorn_V4.1.mp4" type="video/mp4" />
             </video>
           </div>
@@ -108,20 +111,20 @@ export default function ExplainerSection() {
               <HeroCards
                 title="Deposit"
                 color="bg-[#EBE7D4]"
-                imgUri="/images/blackCircles.svg"
-                description="Connect your web3 wallet, deposit your stablecoins and blue chip crypto assets into Popcorn’s DeFi products."
+                animation={depositAnim}
+                description="Connect your web3 wallet, then deposit your stablecoins and blue chip crypto into Popcorn’s DeFi products."
               />
               <HeroCards
                 title="Do Well"
                 color="bg-[#121A27]"
                 textColor="text-white"
-                imgUri="/images/whiteSmile.svg"
+                animation={doWellAnim}
                 description="Optimize your returns with non-custodial vault strategies and staking products."
               />
               <HeroCards
                 title="Do Good"
                 color="bg-[#FFE650]"
-                imgUri="/images/blackSmiles.svg"
+                animation={doGoodAnim}
                 description="Fund community-selected nonprofit and social impact organisations at no additional cost."
               />
             </div>
