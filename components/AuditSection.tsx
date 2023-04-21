@@ -4,7 +4,7 @@ import Carousel from "./Carousel";
 export default function AuditSection() {
 
   return (
-    <section className="md:p-8 p-0 mt-44 flex flex-col items-start w-screen xl:max-w-[1800px] xl:mx-auto">
+    <section className="mt-44 flex flex-col items-start w-screen 2xl:max-w-[1800px] 2xl:mx-auto md:py-8 py-0 px-6 smmd:px-8 md:px-12 lglaptop:px-20">
       <div className="flex-row w-full h-full gap-x-9 md:flex hidden">
         <div className="w-full flex-col flex">
           <p className="text-7xl mb-4">Audited</p>
@@ -37,7 +37,7 @@ export default function AuditSection() {
       </div>
       {/* Mobile Section */}
       <div className="md:hidden flex flex-col items-center relative w-full">
-        <div className="w-full flex-col flex px-6">
+        <div className="w-full flex-col flex">
           <p className="text-7xl mb-4">Audited</p>
           <p className="text-lg mb-6">Our smart contract has been audited by the best in the business.</p>
         </div>

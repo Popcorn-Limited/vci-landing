@@ -8,7 +8,7 @@ export default function DesktopMenu(): JSX.Element {
 
   return (
     <>
-      <div className="flex flex-row items-center justify-between w-full p-8 z-30 ">
+      <div className="flex flex-row items-center justify-between w-full px-6 smmd:px-8 md:px-12 lglaptop:px-20 z-30 ">
         <div className="flex flex-row items-center">
           <div>
             <Link href={`/`} passHref>

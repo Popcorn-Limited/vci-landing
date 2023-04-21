@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import SliderContainer from "./SliderContainer";
 import Link from "next/link";
 
 export default function BuildingSection() {
@@ -29,17 +28,17 @@ export default function BuildingSection() {
       <section className="flex w-screen h-screen max-h-[800px] flex-col relative justify-start -z-10">
         <div style={{ background: 'linear-gradient(270deg, rgba(0, 0, 0, 5e-05) 50%, rgba(0, 0, 0, 0.25) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0.09%, rgba(0, 0, 0, 5e-05) 100%), linear-gradient(360deg, rgba(0, 0, 0, 0.7) 0.04%, rgba(0, 0, 0, 0.0001) 42.85%), url(/images/background-rectangle.png)', 'WebkitBackgroundSize': 'cover' }} className="relative top-0 left-0 flex flex-col justify-between w-screen grow pb-0 bg-cover">
 
-          <div className="w-full grow flex-col flex justify-start items-start xl:max-w-[1800px] xl:mx-auto">
-            <div id="second-slide-element" className={`transition-transform mt-[80px] smmd:w-[60vw] w-full duration-[900ms] ${isVisible ? 'smmd:translate-x-8' : 'smmd:-translate-x-full'}`}>
-              <h1 className="mb-6 px-8 smmd:px-0 leading-[60px] text-white smmd:leading-[72px] font-normal min-h-[80px]text-left text-4xl smmd:text-8xl lglaptop:text-[96px] lglaptop:leading-[90px] smmd:mt-0 ">
+          <div className="w-full grow flex-col flex justify-start items-start 2xl:max-w-[1800px] 2xl:mx-auto px-6 smmd:px-8 md:px-12 lglaptop:px-20">
+            <div id="second-slide-element" className={`transition-transform mt-[80px] smmd:w-[60vw] w-full duration-[900ms] ${isVisible ? 'smmd:translate-x-0' : 'smmd:-translate-x-full'}`}>
+              <h1 className="mb-6 leading-[60px] text-white smmd:leading-[72px] font-normal min-h-[80px]text-left text-4xl smmd:text-8xl lglaptop:text-[96px] lglaptop:leading-[90px] smmd:mt-0 ">
                 Building a better future through DeFi investing
               </h1>
             </div>
           </div>
 
 
-          <div className="w-full grow flex flex-col justify-end items-end px-8 mb-10 smmd:px-0 xl:max-w-[1800px] xl:mx-auto">
-            <div className={`${isVisible ? 'smmd:-translate-x-8' : 'smmd:translate-x-full'} shrink transition-transform smmd:w-[40vw] w-full delay-[200ms] duration-[800ms] `} >
+          <div className="w-full grow flex flex-col justify-end items-end mb-10 2xl:max-w-[1800px] 2xl:mx-auto px-6 smmd:px-8 md:px-12 lglaptop:px-20">
+            <div className={`${isVisible ? 'smmd:-translate-x-0' : 'smmd:translate-x-full'} shrink transition-transform smmd:w-[40vw] w-full delay-[200ms] duration-[800ms] `} >
               <p className="text-white text-right text-lg">
                 At Popcorn Network, we&#39;re not just about financial gains, we&#39;re also about making a difference. That&#39;s why we partner and donate a percentage of our profits to Gitcoin, a platform that supports social impact organizations across the globe. By investing in our DeFi suite, you&#39;re not just earning rewards, you&#39;re also investing in change
               </p>
@@ -56,9 +55,9 @@ export default function BuildingSection() {
         </div>
       </section >
       <section className="flex w-screen h-full py-10 bg-[#FFE650] rounded-t-xl z-10 -mt-2">
-        <section className="flex w-screen h-full py-10 bg-[#FFE650] rounded-t-xl z-10 -mt-2 xl:max-w-[1800px] xl:mx-auto">
+        <section className="flex w-screen h-full py-10 bg-[#FFE650] rounded-t-xl z-10 -mt-2 2xl:max-w-[1800px] 2xl:mx-auto">
           <div className="flex-col flex w-full gap-y-4">
-            <div className="flex flex-col md:flex-row w-full md:h-[50%] px-8">
+            <div className="flex flex-col md:flex-row w-full md:h-[50%] pl-6 smmd:pl-8 md:pl-12 lglaptop:pl-20">
               <div className="flex flex-col md:w-[40%]">
                 <p className="text-black text-3xl"><b>Governed by</b></p>
                 <p className="text-black text-3xl -mt-2">PopcornDAO</p>

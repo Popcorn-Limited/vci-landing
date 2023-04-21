@@ -31,10 +31,10 @@ export default function InitialScreen() {
         <img alt="" className="-mr-56 w-[50vw] max-w-[950px] max-h-[80vh] hidden 2xl:block" src="/images/icons/greenPopLogo.svg" />
       </div>
 
-      <section className="relative px-6 smmd:px-8 smmd:mb-0 items-start w-full overflow-scroll">
+      <section className="relative px-6 smmd:px-8 md:px-12 lglaptop:px-20 smmd:mb-0 items-start w-full overflow-scroll">
         <div className="flex flex-col items-start smmd:h-full smmd:w-full pb-16 smmd:pb-0 mx-auto min-w-480 lg:flex-row">
           <div className=" text-center z-20 smmd:text-left smmd:mx-0 flex flex-col justify-around h-full w-full">
-            <h1 className="mb-6 leading-[60px] smmd:leading-[72px] font-normal min-h-[80px] max-w-[450px] lglaptop:max-w-[900px] smmd:max-w-[700px] text-left text-5xl smmd:text-8xl lglaptop:text-[96px] lglaptop:leading-[90px] smmd:w-1/2 mt-24 smmd:mt-[70px] ">
+            <h1 className="mb-6 leading-[60px] smmd:leading-[72px] font-normal min-h-[80px] max-w-[450px] lglaptop:max-w-[900px] smmd:max-w-[700px] text-left text-5xl smmd:text-8xl lglaptop:text-[96px] lglaptop:leading-[104px] smmd:w-1/2 mt-24 smmd:mt-[70px] ">
               Do well and do good together with Popcorn&#39;s innovative DeFi solutions
             </h1>
             <div className="w-fit flex mb-48 smmd:mb-36">
@@ -62,7 +62,7 @@ export default function InitialScreen() {
                   content: <p className="text-gray-900 text-md">This is the total amount locked on Popcorns smart contracts</p>
                 }}
               />
-              <div className="smmd:align-end max-w-[500px] smmd:flex smmd:flex-col smmd:h-full smmd:justify-end">
+              <div className="smmd:align-end max-w-[500px] laptop:max-w-[600px] smmd:flex smmd:flex-col smmd:h-full smmd:justify-end">
                 <p className="smmd:text-right text-left text-xl">Popcorn is a ReFi yield-optimizing protocol with automated asset strategies that simultaneously fund public goods</p>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function InitialScreen() {
           </div>
         </div>
       </section>
-      <div className="col-span-12 block smmd:col-span-8 smmd:col-start-4 px-6 smmd:px-8 pb-6">
+      <div className="col-span-12 block smmd:col-span-8 smmd:col-start-4 pb-6 px-6 smmd:px-8 md:px-12 lglaptop:px-20">
         <h6 className=" font-medium leading-6">Built With</h6>
         <SliderContainer slidesToShow={4}>
           <img src="/images/builtWithLogos/curve.svg" alt="" className="px-2 smmd:px-5 w-10 h-10 object-contain" />
