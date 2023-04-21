@@ -16,7 +16,7 @@ export default function FaqCard({ title, description }: FaqCardProps) {
           <p className="text-2xl smmd:text-3xl leading-none">{title}</p>
           <p className={`smmd:text-lg text-[#737373] ${visible === true ? 'flex' : 'hidden'}`}>{description}</p>
         </div>
-        <div onClick={() => { }} className="w-12 h-12 rounded-full border-[#645F4B] border-[1px] flex flex-col justify-center items-center cursor-pointer">
+        <div onClick={() => { }} className="w-12 h-12 rounded-full border-[#645F4B] border-[1px] flex flex-col justify-center items-center cursor-pointer bg-white">
           <ChevronDownIcon color="#645F4B" width={20} height={20} />
         </div>
       </div>

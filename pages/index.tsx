@@ -1,13 +1,14 @@
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import InitialScreen from "../components/InitialScreen";
-import VideoSection from "../components/VideoSection";
 import ProductsSection from "../components/ProductsSection";
 import AuditSection from "../components/AuditSection";
 import VaultCraftSection from "../components/VaultCraftSection";
-import BuildingSection from "../components/BuildingSection";
-import FinalSection from "../components/FinalSection";
+import GitcoinSection from "../components/GitcoinSection";
+import FaqSection from "../components/FaqSection";
 import Footer from "../components/Footer";
+import CommunitySection from "../components/CommunitySection";
+import ExplainerSection from "../components/ExplainerSection";
+import HeroSection from "../components/HeroSection";
 
 
 const IndexPage = () => {
@@ -20,14 +21,15 @@ const IndexPage = () => {
   }, [router.pathname]);
 
   return (
-    <div className="absolute left-0 flex flex-col">
-      <InitialScreen />
-      <VideoSection />
+    <div className="absolute left-0 right-0 flex flex-col">
+      <HeroSection />
+      <ExplainerSection />
       <ProductsSection />
       <AuditSection />
       <VaultCraftSection />
-      <BuildingSection />
-      <FinalSection />
+      <GitcoinSection />
+      <CommunitySection />
+      <FaqSection />
       <Footer />
     </div >
   );

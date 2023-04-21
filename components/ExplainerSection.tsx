@@ -4,7 +4,7 @@ import HeroCards from "./HeroCards";
 import { useState } from "react";
 import Link from "next/link";
 
-export default function VideoSection() {
+export default function ExplainerSection() {
 
   const [move, setMove] = useState(0);
   const [touchStart, setTouchStart] = useState(0);
@@ -54,19 +54,21 @@ export default function VideoSection() {
     setEndX(null);
   }
   return (
-    <section className="w-screen mt-16 md:mt-[200px] 2xl:mx-auto 2xl:max-w-[1800px] px-6 smmd:px-8 md:px-12 lglaptop:px-20">
-      <div className="hidden md:flex flex-col mb-18 relative overflow-x-hidden">
-        <p id="titlex" className="text-[60px] leading-[65px] max-w-[70%] mb-2">Earn high returns on your crypto while funding public goods</p>
+    <section className="w-screen bg-[#F7F7F7] pt-24 md:pt-52 2xl:mx-auto 2xl:max-w-[1800px] px-6 smmd:px-8 md:px-12 lglaptop:px-20">
+      <div className="hidden md:flex flex-col relative overflow-x-hidden">
+        <p id="titlex" className="text-8xl leading-none max-w-[50%] mb-18">
+          Earn high returns on your crypto while giving back, for free!
+        </p>
         <div className="w-full h-12 flex flex-row justify-end">
           <div
             onClick={() => setMove(0)}
-            className="w-12 h-12 rounded-full border-[#645F4B] border-[1px] flex flex-col justify-center items-center mr-2 cursor-pointer"
+            className="w-12 h-12 rounded-full bg-white border-[#645F4B] border-[1px] flex flex-col justify-center items-center mr-2 cursor-pointer"
           >
             <ChevronLeftIcon color="#645F4B" width={20} height={20} />
           </div>
           <div
             onClick={() => setMove(1)}
-            className="w-12 h-12 rounded-full border-[#645F4B] border-[1px] flex flex-col justify-center items-center cursor-pointer"
+            className="w-12 h-12 rounded-full bg-white border-[#645F4B] border-[1px] flex flex-col justify-center items-center cursor-pointer"
           >
             <ChevronRightIcon color="#645F4B" width={20} height={20} />
           </div>
@@ -89,7 +91,9 @@ export default function VideoSection() {
           <div className="flex flex-col w-screen xl:w-[1800px] border-box">
 
             <div className="flex flex-col w-[338px] mb-[100px] ml-[24px] smmd:mb-12 xl:mb-36">
-              <p className="text-lg">It&#39;s now easy to deposit your crypto, optimise your yield, and create positive global impact at the same time.</p>
+              <p className="text-lg">
+                It&#39;s now easy to deposit your crypto, optimise your yield, and create positive global impact at the same time.
+              </p>
               <Link
                 href="https://app.pop.network/sweet-vaults"
                 passHref

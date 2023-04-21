@@ -4,15 +4,14 @@ import FaqCard from "./FAQCard";
 import DiscordIcon from "./SVGIcons/DiscordIcon";
 import TwitterIcon from "./SVGIcons/TwitterIcon";
 
-export default function FinalSection() {
+export default function FaqSection() {
 
   return (
-    <section className="bg-[#F7F7F7] smmd:py-36 py-18 flex flex-col w-screen px-6 smmd:px-8 md:px-12 lglaptop:px-20">
-      <div className="2xl:max-w-[1800px] 2xl:mx-auto">
+    <section className="bg-[#F7F7F7] smmd:py-36 py-18 flex flex-col w-screen 2xl:max-w-[1800px] 2xl:mx-auto px-6 smmd:px-8 md:px-12 lglaptop:px-20">
         <div className="flex smmd:flex-row flex-col-reverse w-full h-fit">
           <div className="flex-col smmd:w-1/2 w-full mt-18 smmd:mt-0">
             <p className="text-lg mb-2">Frequently Asked Questions</p>
-            <p className="smmd:text-7xl text-4xl leading-none">Empower Your Investments and Create Positive Change</p>
+            <p className="smmd:text-7xl text-4xl leading-none">Empower Your Crypto: Create Positive Impact</p>
           </div>
 
           <div className="flex-col flex smmd:w-1/2 w-full items-end">
@@ -60,7 +59,6 @@ export default function FinalSection() {
             description="Just by depositing your crypto into Popcorn's vaults and staking products, you are creating positive global impact, for free! There is no other non-custodial, DeFi platform where you can park your crypto in yield-generating products, keep all of the competitive yields that you generate, and donate protocol fees that you pay to philanthropy at the same time. Why do DeFi if you're not doing DeFi for good?"
           />
         </div>
-      </div>
     </section>
   )
 }
