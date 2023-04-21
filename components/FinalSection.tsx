@@ -47,10 +47,18 @@ export default function FinalSection() {
           </div>
         </div>
         <div className="flex flex-col grow w-full mt-20 smmd:mt-30 divide-y divide-primaryLight">
-          <FaqCard title="What is Popcorn?" description="xxx" />
-          <FaqCard title="How does Popcorn work?" description="xxx" />
-          <FaqCard title="Can I create a savings account with Popcorn?" description="xxx" />
-          <FaqCard title="What kind of positive global impact can I make with Popcorn?" description="xxx" />
+          <FaqCard
+            title="What is Popcorn?"
+            description="Popcorn is a Regenerative Finance yield-optimizing protocol with soul, where protocol fees fund public goods and PopcornDAO's operations. PopcornDAO is a decentralized autonomous organization that is responsible for the software development of all smart contracts offered on the dApp (app.pop.network)."
+          />
+          <FaqCard
+            title="How does Popcorn work?"
+            description="Users can deposit their crypto into Popcorn's yield-generating products, specifically vaults and staking products, to earn competitive yield while automatically funding public goods at no additional cost to the user. A portion of protocol fees as well as all yield generated with vaults for good are used to fund community determined nonprofits and social impact organizations on Gitcoin."
+          />
+          <FaqCard
+            title="What kind of positive global impact can I make with Popcorn?"
+            description="Just by depositing your crypto into Popcorn's vaults and staking products, you are creating positive global impact, for free! There is no other non-custodial, DeFi platform where you can park your crypto in yield-generating products, keep all of the competitive yields that you generate, and donate protocol fees that you pay to philanthropy at the same time. Why do DeFi if you're not doing DeFi for good?"
+          />
         </div>
       </div>
     </section>
