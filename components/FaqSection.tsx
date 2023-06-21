@@ -16,7 +16,7 @@ export default function FaqSection() {
 
           <div className="flex-col flex smmd:w-1/2 w-full items-end">
 
-            <Link
+            {/* <Link
               href="https://discord.gg/w9zeRTSZsq"
               passHref
               className="cursor-pointer flex flex-row bg-[#FEE25D] py-3 items-center justify-center w-full smmd:w-[70%] rounded-[4px]">
@@ -24,7 +24,7 @@ export default function FaqSection() {
               <div className="h-fit mt-2 ml-2">
                 <DiscordIcon color="black" size="24" />
               </div>
-            </Link>
+            </Link> */}
 
             <div className="flex flex-col mt-18 w-full smmd:w-[70%]">
               <p className="text-[#6B7280]">Be part of our community</p>

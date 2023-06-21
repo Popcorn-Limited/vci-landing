@@ -27,9 +27,9 @@ export default function Footer() {
             <Link href="https://twitter.com/Popcorn_DAO" passHref>
               Twitter
             </Link>
-            <Link href="https://discord.gg/w9zeRTSZsq" passHref>
+            {/* <Link href="https://discord.gg/w9zeRTSZsq" passHref>
               Discord
-            </Link>
+            </Link> */}
             <Link href="https://github.com/popcorndao" passHref>
               Github
             </Link>
@@ -49,9 +49,9 @@ export default function Footer() {
             <Link href="https://medium.com/popcorndao" passHref>
               <MediumIcon color={"black"} size={"24"} />
             </Link>
-            <Link href="https://discord.gg/w9zeRTSZsq" passHref>
+            {/* <Link href="https://discord.gg/w9zeRTSZsq" passHref>
               <DiscordIcon color={"black"} size={"24"} />
-            </Link>
+            </Link> */}
             <Link href="https://github.com/popcorndao" passHref>
               <GithubIcon color={"black"} size={"24"} />
             </Link>
@@ -71,9 +71,9 @@ export default function Footer() {
           <Link href="https://twitter.com/Popcorn_DAO" passHref>
             Twitter
           </Link>
-          <Link href="https://discord.gg/w9zeRTSZsq" passHref>
+          {/* <Link href="https://discord.gg/w9zeRTSZsq" passHref>
             Discord
-          </Link>
+          </Link> */}
           <Link href="https://github.com/popcorndao" passHref>
             Github
           </Link>
