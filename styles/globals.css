@@ -20,6 +20,19 @@ a {
   text-decoration: none;
 }
 
+span,
+p,
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "KH Teka", sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -361,22 +374,6 @@ img {
 .wheelPicker ul {
   -ms-overflow-style: none !important; /* IE and Edge */
   scrollbar-width: none !important; /* Firefox */
-}
-
-@media screen and (max-width: 320px) {
-  .wheelPicker li[aria-selected="true"] span:nth-child(2) {
-    left: 50%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 999px) {
-  .wheelPicker li[aria-selected="true"] span:nth-child(2) {
-    left: 15%;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  html {
-    font-size: 12px;
-  }
 }
 
 .rc-tooltip.rc-tooltip-zoom-appear,
