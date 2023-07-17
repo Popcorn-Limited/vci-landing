@@ -1,5 +1,5 @@
 import AppButton from "./Common/AppButton";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 
 export default function Navbar() {
     const links: {
@@ -38,22 +38,16 @@ export default function Navbar() {
             return acc
         }, 0)
 
-        console.log(translateCount)
-
+        underLinkRef.current?.style.setProperty('visibility', 'visible')
         underLinkRef.current?.style.setProperty('transform', `translateX(${Math.round(translateCount)}px) rotate(${(idx) * 90}deg)`)
     }
     const toggleMobileMenu = () => setIsMobileMenuOpened(!isMobileMenuOpened)
-
-
-    useEffect(() => {
-        changeUnderLinkPosition(0)
-    }, [linksRef.current])
 
     return (
         <div className={`p-8 flex justify-between text-white items-center`}>
             <img className={`h-10 w-10`} src={`images/icons/popLogoWhite.svg`} alt="logo"/>
             <div className={`flex gap-4 items-stretch relative text-white hover:text-gray-400`}>
-                <span className={`hidden smmd:block absolute duration-[0.75s] w-1.5 h-1.5 rounded-[1px] bottom-0 bg-[#DFFF1C]`} ref={underLinkRef} />
+                <span className={`hidden smmd:block invisible absolute duration-[0.75s] w-1.5 h-1.5 rounded-[1px] bottom-0 bg-[#DFFF1C]`} ref={underLinkRef} />
                 <div className={`hidden smmd:flex duration-[0.25s]`}>
                     {links.map((link, idx) => {
                         return (
