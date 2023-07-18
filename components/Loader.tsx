@@ -38,7 +38,7 @@ export default function Loader({
     }, [numberArr])
 
     return (
-        <div className={`bg-[#DFFF1C] overflow-hidden w-[100vw] absolute ${isShown ? 'h-[100vh]' : 'duration-[1s] h-0'}`}>
+        <div className={`bg-[#DFFF1C] z-20 overflow-hidden w-[100vw] fixed ${isShown ? 'h-[100vh]' : 'duration-[1s] h-0'}`}>
             <span className={`smmd:p-[72px] h-[100vh] flex items-end`}>
                 {numberArr.map((number, idx) => {
                     return (
