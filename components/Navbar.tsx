@@ -48,9 +48,9 @@ export default function Navbar() {
         <>
             <div className={`p-8 flex justify-between text-white items-center z-10`}>
                 <img className={`h-10 w-10`} src={`images/icons/popLogoWhite.svg`} alt="logo"/>
-                <div className={`flex gap-4 items-stretch relative text-white hover:text-gray-400`}>
+                <div className={`flex gap-4 items-stretch relative`}>
                     <span className={`hidden smmd:block invisible absolute duration-[0.75s] w-1.5 h-1.5 rounded-[1px] bottom-0 bg-[#DFFF1C]`} ref={underLinkRef} />
-                    <div className={`hidden smmd:flex duration-[0.25s]`}>
+                    <div className={`hidden smmd:flex duration-[0.25s] text-white hover:text-gray-400`}>
                         {links.map((link, idx) => {
                             return (
                                 <a
