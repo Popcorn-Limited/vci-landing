@@ -5,9 +5,11 @@ function sleep(ms: number): Promise<void> {
 }
 
 export default function Loader({
-    isLoading
+    isLoading,
+    endLoadingAnimation
 }: {
     isLoading: boolean
+    endLoadingAnimation: () => void
 }) {
     const [isShown, setIsShown] = useState(true)
     const [numberArr, setNumberArr] = useState([0, 0, 0])
@@ -26,6 +28,8 @@ export default function Loader({
         } else {
             await sleep(750)
             setIsShown(false)
+            await sleep(1000)
+            endLoadingAnimation()
         }
     }
 

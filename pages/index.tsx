@@ -3,7 +3,11 @@ import React, { useEffect } from "react";
 import HeroSection from "../components/HeroSection";
 
 
-const IndexPage = () => {
+const IndexPage = ({
+    isLoaded
+}: {
+    isLoaded: true
+}) => {
   const router = useRouter();
 
   useEffect(() => {
@@ -14,7 +18,7 @@ const IndexPage = () => {
 
   return (
     <div className="absolute left-0 right-0 flex flex-col bg-[#000000] text-white">
-        <HeroSection />
+        <HeroSection isLoaded={isLoaded}  />
     </div >
   );
 };

@@ -17,13 +17,15 @@ type WindowWithDataLayer = Window & {
 declare const window: WindowWithDataLayer;
 
 export default function MyApp(props) {
+  const [isLoading, setLoading] = useState(true);
+  const [isLoaderAnimationDone, setLoaderAnimationDone] = useState(false);
+
   const { Component, pageProps } = props;
   const getLayout =
     Component.getLayout ||
     (() => (
-      <Component {...pageProps} />
+      <Component {...pageProps} isLoaded={isLoaderAnimationDone} />
     ));
-  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => setLoading(false))
 
@@ -60,7 +62,7 @@ export default function MyApp(props) {
           <link rel="preconnect" href="https://fonts.gstatic.com" />
         </Head>
         {getLayout(<Component {...pageProps} />)}
-        <Loader isLoading={isLoading} />
+        <Loader isLoading={isLoading} endLoadingAnimation={() => setLoaderAnimationDone(true)} />
       </React.Fragment>
   );
 }

@@ -1,9 +1,25 @@
 import Navbar from "./Navbar";
+import { useRef, useEffect } from "react";
 
-export default function HeroSection() {
+export default function HeroSection({
+    isLoaded
+}: {
+    isLoaded?: boolean
+}) {
+    const scrollForMoreRef = useRef<HTMLElement | null>(null)
+    const videoRef = useRef<HTMLVideoElement | null>(null)
+
+    useEffect(() => {
+        console.log(isLoaded)
+        if (isLoaded) {
+            scrollForMoreRef.current?.style.setProperty('height', '180px')
+            videoRef.current?.play()
+        }
+    }, [isLoaded])
+
     return (
         <>
-            <video className={`absolute w-full object-cover h-[900px]`} src="videos/HeroSectionVideo.mp4" loop autoPlay muted />
+            <video className={`absolute w-full object-cover h-[900px]`} src="videos/HeroSectionVideo.mp4" loop muted ref={videoRef} />
             <div className={`h-[900px] flex flex-col`}>
                 <Navbar />
                 <div className={`w-full grow z-10 py-12 smmd:py-[100px] px-6 smmd:px-8 flex smmd:gap-10 flex-col smmd:flex-row justify-between items-end`}>
@@ -12,7 +28,7 @@ export default function HeroSection() {
                         writingMode: 'vertical-rl',
                     }}>
                         <span>scroll for more</span>
-                        <span className={`w-[1px] h-[180px] bg-white`}></span>
+                        <span className={`w-[1px] duration-[0.8s] h-0 bg-white`} ref={scrollForMoreRef} />
                     </div>
                 </div>
             </div>
