@@ -1,9 +1,21 @@
-import React from "react";
+import Navbar from "./Navbar";
 
 export default function HeroSection() {
     return (
         <>
-            <div className={`h-20 w-full`}>123</div>
+            <video className={`absolute w-full object-cover h-[900px]`} src="videos/HeroSectionVideo.mp4" loop autoPlay muted />
+            <div className={`h-[900px] flex flex-col`}>
+                <Navbar />
+                <div className={`w-full grow z-10 py-12 smmd:py-[100px] px-6 smmd:px-8 flex smmd:gap-10 flex-col smmd:flex-row justify-between items-end`}>
+                    <span className={`text-[40px] smmd:text-[80px] max-w-[1000px] leading-none`}>Create custom automated asset strategies in minutes with Vaultcraft</span>
+                    <div className={`rotate-180 uppercase flex items-center gap-2 smmd:pl-12`} style={{
+                        writingMode: 'vertical-rl',
+                    }}>
+                        <span>scroll for more</span>
+                        <span className={`w-[1px] h-[180px] bg-white`}></span>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
