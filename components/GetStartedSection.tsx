@@ -20,7 +20,7 @@ export default function GetStartedSection() {
                     <AppButton className={`font-bold w-full max-w-[176px]`} text={'Get Started'} />
                 </a>
             </div>
-            <video src="videos/GetStartedVideo.mov" className={`self-end w-full smmd:max-w-[650px] h-[600px] object-cover`} loop muted autoPlay />
+            <video src="videos/GetStartedVideo.mov" className={`self-end w-full smmd:max-w-[600px] h-[550px] object-cover`} loop muted autoPlay />
         </div>
     )
 }
