@@ -10,7 +10,6 @@ export default function HeroSection({
     const videoRef = useRef<HTMLVideoElement | null>(null)
 
     useEffect(() => {
-        console.log(isLoaded)
         if (isLoaded) {
             scrollForMoreRef.current?.style.setProperty('height', '180px')
             videoRef.current?.play()

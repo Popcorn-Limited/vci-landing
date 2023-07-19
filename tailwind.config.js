@@ -168,6 +168,7 @@ module.exports = {
       animation: { "spin-slow": "spin 3s linear infinite" },
       fontFamily: {
         khTeka: ["'KH Teka'", "sans-serif"],
+        georgia: ["'Georgia'", "sans-serif"],
       },
       width: {
         "fit-content": "fit-content",
