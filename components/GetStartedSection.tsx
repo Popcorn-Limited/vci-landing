@@ -1,6 +1,5 @@
 import AppButton from "./Common/AppButton";
 import { useRef, useEffect } from "react";
-import entry from "next/dist/server/typescript/rules/entry";
 
 function sleep(ms: number): Promise<void> {
     return new Promise(resolve => setTimeout(resolve, ms))
