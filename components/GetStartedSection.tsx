@@ -28,8 +28,8 @@ function typeAnimate(e: HTMLElement | null) {
         if (isShown || entries[0].intersectionRatio === 0) return
 
         isShown = true
-        console.log('intersected')
         const newEl = document.createElement(e.tagName)
+
         newEl.style.setProperty('position', 'absolute')
         newEl.className = e.className
 
