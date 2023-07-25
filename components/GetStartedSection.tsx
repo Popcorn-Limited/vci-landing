@@ -105,7 +105,7 @@ export default function GetStartedSection() {
     return (
         <div className={`min-h-[1100px] bg-gradient-to-b from-black to-[#030E22] pt-60 smmd:pl-8 smmd:pr-0 flex flex-col smmd:flex-row smmd:gap-5 gap-16`}>
             <div className={`flex flex-col smmd:pb-5 px-6`}>
-                <div className={`text-[40px] smmd:text-[56px] max-w-[760px] leading-none`} ref={titleRef}>
+                <div className={`text-[40px] smmd:text-[56px] max-w-[760px] max-h-[300px] leading-none`} ref={titleRef}>
                     <span className={`opacity-60`}>The</span>
                     <span className={`italic text-[#7AFB79] font-georgia opacity-100`}> no code toolkit </span>
                     <span className={`opacity-60`}>for</span>

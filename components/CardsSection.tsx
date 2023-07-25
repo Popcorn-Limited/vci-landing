@@ -1,4 +1,6 @@
-import {useState, useRef, useEffect} from "react";
+import { useState, useRef, useEffect } from "react";
+import RightArrowIcon from "./SVGIcons/RightArrowIcon";
+import LeftArrowIcon from "./SVGIcons/LeftArrowIcon";
 
 export function CardsSection() {
     const cards = [
@@ -32,21 +34,34 @@ export function CardsSection() {
     const [selectedCard, setSelectedCard] = useState(0)
     const cardsRef = useRef<HTMLDivElement | null>(null)
 
+    const handleBackCard = () => {
+        if (selectedCard === 0) return
+
+        setSelectedCard(selectedCard - 1)
+    }
+
+    const handleNextCard = () => {
+        if (selectedCard === cards.length - 1) return
+
+        setSelectedCard(selectedCard + 1)
+    }
+
     useEffect(() => {
-        console.log('useEffect')
         if (!cardsRef?.current) return
 
         const cardsEl = cardsRef.current
-        const topScroll = window.pageYOffset + cardsEl?.getBoundingClientRect().top - ((window.innerHeight - cardsEl?.offsetHeight) / 2)
-        const bottomScroll = window.pageYOffset + cardsEl?.getBoundingClientRect().top - ((window.innerHeight - cardsEl?.offsetHeight) / 4)
 
-        let previousScroll = topScroll
+        let previousScroll = window.scrollY + cardsEl?.getBoundingClientRect().top - ((window.innerHeight - cardsEl?.offsetHeight) / 2)
         let isCardScrollingBlocked = false
         let isScrollBlocked = false
 
-        const handleScroll = (e: Event) => {
+        const handleScroll = () => {
+            if (window.innerWidth < 700) return
+            const topScroll = window.scrollY + cardsEl?.getBoundingClientRect().top - ((window.innerHeight - cardsEl?.offsetHeight) / 2)
+            const bottomScroll = window.scrollY + cardsEl?.getBoundingClientRect().top - ((window.innerHeight - cardsEl?.offsetHeight) / 4)
+
             const currentScroll = window.scrollY
-            console.log(currentScroll, topScroll, bottomScroll, isScrollBlocked, topScroll + window.innerHeight / 4)
+            console.log(isScrollBlocked)
 
             if (currentScroll < topScroll) {
                 setSelectedCard(0)
@@ -101,10 +116,10 @@ export function CardsSection() {
 
     return (
         <div className={`flex flex-col px-8 py-40 items-center`}>
-            <span className={`font-georgia italic text-[20px] text-[#DFFF1C] leading-none`}>This is how it works</span>
-            <span className={`pt-4 max-w-[660px] text-[56px] text-center leading-none`}>Using Vaultcraft is simple and straightforward.</span>
-            <div className={`grid grid-cols-5 justify-between pt-[130px] self-stretch`}>
-                <div className={`flex flex-col gap-1 justify-center`}>
+            <span className={`font-georgia italic smmd:text-[20px] text-[#DFFF1C] leading-none`}>This is how it works</span>
+            <span className={`pt-4 max-w-[660px] smmd:text-[56px] text-[24px] text-center leading-none`}>Using Vaultcraft is simple and straightforward.</span>
+            <div className={`smmd:grid grid-cols-5 justify-between smmd:pt-[130px] pt-[56px] self-stretch`}>
+                <div className={`hidden smmd:flex flex-col gap-1 justify-center`}>
                     {cards.map((card, idx) => {
                         return (
                             <span
@@ -125,7 +140,7 @@ export function CardsSection() {
                                 <div
                                     key={idx}
                                     className={`
-                                        p-8 absolute top-0 left-[50%] flex flex-col gap-8 md:w-[512px] smmd:w-[420px] h-[660px]
+                                        p-8 absolute top-0 left-[50%] flex flex-col gap-8 w-full md:w-[512px] smmd:w-[420px] h-[660px]
                                         bg-[#141416] border-[1px] border-[#555] rounded-[20px] duration-500 overflow-hidden
                                         ${selectedCard === idx ? '' : `opacity-80`}
                                     `}
@@ -145,13 +160,19 @@ export function CardsSection() {
                         })
                     }
                 </div>
-                <span className={`flex items-center justify-end`}>
-                    {
-                        (selectedCard + 1).toLocaleString('en-US', {
+                <span className={`flex items-center gap-4 smmd:justify-end smmd:p-0 pt-[22px]`}>
+                    <button className={`smmd:hidden`} onClick={handleBackCard}>
+                        <LeftArrowIcon color={`white`} />
+                    </button>
+                    <span>
+                        {
+                            (selectedCard + 1).toLocaleString('en-US', {
                             minimumIntegerDigits: 2,
                             useGrouping: false
                         })
-                    }&nbsp;/&nbsp;<span className={`opacity-60`}>
+                        }
+                        &nbsp;/&nbsp;
+                        <span className={`opacity-60`}>
                     {
                         cards.length.toLocaleString('en-US', {
                             minimumIntegerDigits: 2,
@@ -159,6 +180,10 @@ export function CardsSection() {
                         })
                     }
                     </span>
+                    </span>
+                    <button className={`smmd:hidden`} onClick={handleNextCard}>
+                        <RightArrowIcon color={`white`} />
+                    </button>
                 </span>
             </div>
         </div>
