@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import RightArrowIcon from "./SVGIcons/RightArrowIcon";
 import LeftArrowIcon from "./SVGIcons/LeftArrowIcon";
 
-export function CardsSection() {
+export default function CardsSection() {
     const cards = [
         {
             title: 'Asset Selection',
@@ -57,21 +57,13 @@ export function CardsSection() {
 
         const handleScroll = () => {
             if (window.innerWidth < 700) return
+
             const topScroll = window.scrollY + cardsEl?.getBoundingClientRect().top - ((window.innerHeight - cardsEl?.offsetHeight) / 2)
             const bottomScroll = window.scrollY + cardsEl?.getBoundingClientRect().top - ((window.innerHeight - cardsEl?.offsetHeight) / 4)
 
             const currentScroll = window.scrollY
-            console.log(isScrollBlocked)
 
-            if (currentScroll < topScroll) {
-                setSelectedCard(0)
-            }
-
-            else if (currentScroll > bottomScroll) {
-                setSelectedCard(cards.length - 1)
-            }
-
-            else {
+            if (currentScroll > topScroll && currentScroll < bottomScroll) {
                 if(!isCardScrollingBlocked) {
                     isCardScrollingBlocked = true
 
