@@ -2,7 +2,8 @@ import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 import HeroSection from "../components/HeroSection";
 import GetStartedSection from "../components/GetStartedSection";
-import {CardsSection} from "../components/CardsSection";
+import CardsSection from "../components/CardsSection";
+import Partners from "../components/Partners";
 
 
 const IndexPage = ({
@@ -23,6 +24,7 @@ const IndexPage = ({
         <HeroSection isLoaded={isLoaded}  />
         <GetStartedSection />
         <CardsSection />
+        <Partners />
     </div >
   );
 };

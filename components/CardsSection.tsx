@@ -51,15 +51,15 @@ export default function CardsSection() {
 
         const cardsEl = cardsRef.current
 
-        let previousScroll = window.scrollY + cardsEl?.getBoundingClientRect().top - ((window.innerHeight - cardsEl?.offsetHeight) / 2)
+        let previousScroll = window.scrollY + cardsEl?.getBoundingClientRect().top - window.innerHeight + cardsEl?.offsetHeight
         let isCardScrollingBlocked = false
         let isScrollBlocked = false
 
         const handleScroll = () => {
             if (window.innerWidth < 700) return
 
-            const topScroll = window.scrollY + cardsEl?.getBoundingClientRect().top - ((window.innerHeight - cardsEl?.offsetHeight) / 2)
-            const bottomScroll = window.scrollY + cardsEl?.getBoundingClientRect().top - ((window.innerHeight - cardsEl?.offsetHeight) / 4)
+            const topScroll = window.scrollY + cardsEl?.getBoundingClientRect().top - window.innerHeight + cardsEl?.offsetHeight
+            const bottomScroll = window.scrollY + cardsEl?.getBoundingClientRect().top
 
             const currentScroll = window.scrollY
 
