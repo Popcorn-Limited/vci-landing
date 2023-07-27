@@ -60,7 +60,7 @@ export default function Footer() {
                                 </a>
                             </div>
                         </div>
-                        <div className={`flex flex-col gap-2 smmd:pt-[105px]`}>
+                        <div className={`flex flex-col gap-2 smmd:pt-[105px] self-end smmd:self-auto smmd:pb-0 pb-[40px]`}>
                             <span className={`text-[#D7D7D7] pb-4`}>Vaultcraft</span>
                             {links.map((link, idx) => (
                                 <a key={idx} href={link.href} className={`text-[14px] hover:text-[#DFFF1C] font-medium duration-[0.25s]`}>
