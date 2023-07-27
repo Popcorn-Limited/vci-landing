@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection";
 import GetStartedSection from "../components/GetStartedSection";
 import CardsSection from "../components/CardsSection";
 import Partners from "../components/Partners";
+import Footer from "../components/Footer";
 
 
 const IndexPage = ({
@@ -25,6 +26,7 @@ const IndexPage = ({
         <GetStartedSection />
         <CardsSection />
         <Partners />
+        <Footer />
     </div >
   );
 };

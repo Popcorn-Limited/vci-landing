@@ -37,18 +37,18 @@ export default function Partners() {
                 <span className={`text-[56px] leading-none`}>Audited</span>
                 <span className={`opacity-60 leading-normal`}>Our smart contract has been audited by the best in the business.</span>
             </div>
-            <div className={`hidden smmd:grid grid-cols-3 gap-8 grow`}>
+            <div className={`duration-500 hidden smmd:grid grid-cols-3 gap-8 grow`}>
                 {partners.map((partner, idx) => (
-                    <div className={`group flex flex-col gap-6 grow`} key={idx}>
+                    <div className={`duration-[inherit] group flex flex-col gap-6 grow`} key={idx}>
                         <div
                             className={`
-                                flex justify-center px-[15%] items-center rounded-[8px] after:block after:pb-[130%]
+                                flex justify-center px-[15%] items-center rounded-[8px] after:block after:pb-[130%] duration-[inherit]
                                 group-hover:bg-[#DFFF1C]
                             `}>
                             <img src={partner.whiteLogo} className={`w-full group-hover:hidden`} alt="logo" />
                             <img src={partner.blackLogo} className={`w-full hidden group-hover:block`} alt="logo"/>
                         </div>
-                        <div className={`p-2 flex flex-col gap-4 opacity-0 group-hover:opacity-100`}>
+                        <div className={`p-2 flex flex-col gap-4 opacity-0 group-hover:opacity-100 duration-[inherit]`}>
                             <span className={`text-[#DFFF1C] text-[24px]`}>
                                 {partner.name}
                             </span>
