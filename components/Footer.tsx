@@ -6,6 +6,10 @@ import UpArrowIcon from "./SVGIcons/UpArrowIcon";
 export default function Footer() {
     const links = [
         {
+            label: 'dApp',
+            href: 'https://google.com/',
+        },
+        {
             label: 'How it works',
             href: 'https://google.com/'
         },
