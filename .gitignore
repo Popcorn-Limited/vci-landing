@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 /.idea
+/.DS_Store
 
 # next.js
 /.next/
