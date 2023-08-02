@@ -1,7 +1,6 @@
-import AppButton from "./Common/AppButton";
+import AppButton from "../Common/AppButton";
 import { useState, useRef } from "react";
-
-import MobileMenu from "./MobileMenu";
+import { MobileMenu } from "@/components/Sections";
 
 export default function Navbar() {
     const links: {
@@ -10,11 +9,11 @@ export default function Navbar() {
     }[] = [
         {
             label: 'How it works',
-            href: 'https://google.com/'
+            href: '#HowItWorks',
         },
         {
             label: 'Contact',
-            href: 'https://google.com/'
+            href: '#Footer',
         }
     ]
 

@@ -10,6 +10,7 @@ body {
   height: 100%;
   background: #fff;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -191,9 +192,10 @@ input[type="number"] {
 
 .slick-dots {
   display: flex !important;
+  position: static;
   justify-content: center;
   bottom: -3.75rem;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   gap: 1.5rem;
   list-style-type: none;
 }

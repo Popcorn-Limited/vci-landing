@@ -1,10 +1,6 @@
 import { useRouter } from "next/router";
-import React, { useEffect } from "react";
-import HeroSection from "../components/HeroSection";
-import GetStartedSection from "../components/GetStartedSection";
-import CardsSection from "../components/CardsSection";
-import Partners from "../components/Partners";
-import Footer from "../components/Footer";
+import { useEffect } from "react";
+import { HeroSection, GetStartedSection, CardsSection, Partners, Footer } from "@/components/Sections";
 
 
 const IndexPage = ({
@@ -16,7 +12,7 @@ const IndexPage = ({
 
   useEffect(() => {
     if (window.location.pathname !== "/") {
-      router.replace(window.location.pathname);
+      router.replace(window.location.pathname);``
     }
   }, [router.pathname]);
 
@@ -24,8 +20,10 @@ const IndexPage = ({
     <div className="absolute left-0 right-0 flex flex-col bg-[#000000] text-white">
         <HeroSection isLoaded={isLoaded}  />
         <GetStartedSection />
+        <a id="HowItWorks"></a>
         <CardsSection />
         <Partners />
+        <a id="Footer"></a>
         <Footer />
     </div >
   );

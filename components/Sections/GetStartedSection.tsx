@@ -1,4 +1,4 @@
-import AppButton from "./Common/AppButton";
+import AppButton from "../Common/AppButton";
 import { useRef, useEffect } from "react";
 
 function sleep(ms: number): Promise<void> {
@@ -32,8 +32,9 @@ function typeAnimate(e: HTMLElement | null) {
 
         newEl.style.setProperty('position', 'absolute')
         newEl.className = e.className
+        console.log(e.className)
 
-        e.parentElement?.append(newEl)
+        e.parentElement?.insertBefore(newEl, e.nextSibling)
 
         while (text.length) {
             if (!isInTag && text[0] !== '<') {
@@ -88,6 +89,10 @@ function typeAnimate(e: HTMLElement | null) {
             newEl.innerHTML = unescapeHTML(newEl.innerHTML)
             await sleep(25)
         }
+
+        // animation is ended
+        e?.remove()
+        newEl.style.setProperty('position', 'static')
     })
 
     observer.observe(e)
@@ -95,8 +100,12 @@ function typeAnimate(e: HTMLElement | null) {
 
 export default function GetStartedSection() {
     const titleRef = useRef<HTMLDivElement>(null)
+    let isUseEffectDone = false
 
     useEffect(() => {
+        if (isUseEffectDone) return
+        isUseEffectDone = true
+
         if (titleRef.current) {
             typeAnimate(titleRef.current)
         }
@@ -105,7 +114,7 @@ export default function GetStartedSection() {
     return (
         <div className={`min-h-[1100px] bg-gradient-to-b from-black to-[#030E22] pt-60 smmd:pl-8 smmd:pr-0 flex flex-col smmd:flex-row smmd:gap-5 gap-16`}>
             <div className={`flex flex-col smmd:pb-5 px-6`}>
-                <div className={`text-[40px] smmd:text-[56px] max-w-[760px] max-h-[300px] leading-none`} ref={titleRef}>
+                <div className={`text-[40px] smmd:text-[56px] max-w-[740px] leading-none`} ref={titleRef}>
                     <span className={`opacity-60`}>The</span>
                     <span className={`italic text-[#7AFB79] font-georgia opacity-100`}> no code toolkit </span>
                     <span className={`opacity-60`}>for</span>

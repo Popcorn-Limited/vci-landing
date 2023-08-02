@@ -1,20 +1,13 @@
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import "../styles/globals.css";
-import Loader from "../components/Loader";
-
+import { Loader } from "@/components/Sections";
 
 const { title, description, socialShareImage } = {
   title: "Popcorn - Yield That Counts",
   description: "Popcorn is a regenerative yield optimizing protocol.",
   socialShareImage: "https://www.popcorn.network/images/social_cover_image.png",
 };
-
-type WindowWithDataLayer = Window & {
-  dataLayer: Record<string, any>[];
-};
-
-declare const window: WindowWithDataLayer;
 
 export default function MyApp(props) {
   const [isLoading, setLoading] = useState(true);

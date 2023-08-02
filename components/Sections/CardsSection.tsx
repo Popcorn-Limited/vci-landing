@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
-import RightArrowIcon from "./SVGIcons/RightArrowIcon";
-import LeftArrowIcon from "./SVGIcons/LeftArrowIcon";
+import RightArrowIcon from "../SVGIcons/RightArrowIcon";
+import LeftArrowIcon from "../SVGIcons/LeftArrowIcon";
+import { useWindowSize } from "@uidotdev/usehooks";
 
 export default function CardsSection() {
     const cards = [
@@ -33,6 +34,12 @@ export default function CardsSection() {
 
     const [selectedCard, setSelectedCard] = useState(0)
     const cardsRef = useRef<HTMLDivElement | null>(null)
+
+    const {
+        width: windowWidth,
+    }: {
+        width: number
+    } = useWindowSize()
 
     const handleBackCard = () => {
         if (selectedCard === 0) return
@@ -125,22 +132,24 @@ export default function CardsSection() {
                         )
                     })}
                 </div>
-                <div className={`relative col-start-2 col-end-5 flex h-[660px]`} ref={cardsRef}>
+                <div className={`relative col-start-2 col-end-5 flex h-[420px] smmd:h-[660px]`} ref={cardsRef}>
                     {
                         cards.map((card, idx) => {
                             return (
                                 <div
                                     key={idx}
                                     className={`
-                                        p-8 absolute top-0 left-[50%] flex flex-col gap-8 w-full md:w-[512px] smmd:w-[420px] h-[660px]
+                                        p-8 absolute top-0 left-[50%] flex flex-col gap-8 w-full md:w-[512px] smmd:w-[420px] h-[420px] smmd:h-[660px]
                                         bg-[#141416] border-[1px] border-[#555] rounded-[20px] duration-500 overflow-hidden
                                         ${selectedCard === idx ? '' : `opacity-80`}
                                     `}
                                     style={{
                                         zIndex: cards.length - Math.abs(selectedCard - idx),
-                                        transform: `
+                                        transform: windowWidth > 700 ? `
                                             translateX(calc(-50% + ${(idx - selectedCard) * 24}px))
                                             scale(calc(1 - ${Math.abs(idx - selectedCard) * 0.05}))
+                                        ` : `
+                                            translateX(calc(-50% + ${(idx - selectedCard) * 100}% + ${(idx - selectedCard) * 10}px))
                                         `,
                                     }}
                                 >

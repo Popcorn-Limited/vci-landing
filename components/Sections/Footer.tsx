@@ -1,7 +1,7 @@
-import TwitterIcon from "./SVGIcons/TwitterIcon";
-import DiscordIcon from "./SVGIcons/DiscordIcon";
-import TelegramIcon from "./SVGIcons/TelegramIcon";
-import UpArrowIcon from "./SVGIcons/UpArrowIcon";
+import TwitterIcon from "../SVGIcons/TwitterIcon";
+import DiscordIcon from "../SVGIcons/DiscordIcon";
+import TelegramIcon from "../SVGIcons/TelegramIcon";
+import UpArrowIcon from "../SVGIcons/UpArrowIcon";
 
 export default function Footer() {
     const links = [

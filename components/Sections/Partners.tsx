@@ -32,7 +32,7 @@ export default function Partners() {
     }
 
     return (
-        <div className={`py-[120px] smmd:px-[30px] flex gap-8 flex-col smmd:flex-row`}>
+        <div className={`pt-[120px] pb-[200px] smmd:px-[30px] flex gap-8 flex-col smmd:flex-row`}>
             <div className={`flex flex-col gap-4 min-w-[275px] px-[30px] smmd:p-0`}>
                 <span className={`text-[56px] leading-none`}>Audited</span>
                 <span className={`opacity-60 leading-normal`}>Our smart contract has been audited by the best in the business.</span>
@@ -43,7 +43,7 @@ export default function Partners() {
                         <div
                             className={`
                                 flex justify-center px-[15%] items-center rounded-[8px] after:block after:pb-[130%] duration-[inherit]
-                                group-hover:bg-[#DFFF1C]
+                                bg-[#141416] group-hover:bg-[#DFFF1C]
                             `}>
                             <img src={partner.whiteLogo} className={`w-full group-hover:hidden`} alt="logo" />
                             <img src={partner.blackLogo} className={`w-full hidden group-hover:block`} alt="logo"/>

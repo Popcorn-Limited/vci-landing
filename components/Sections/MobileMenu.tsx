@@ -1,6 +1,6 @@
-import TwitterIcon from "./SVGIcons/TwitterIcon";
-import DiscordIcon from "./SVGIcons/DiscordIcon";
-import TelegramIcon from "./SVGIcons/TelegramIcon";
+import TwitterIcon from "../SVGIcons/TwitterIcon";
+import DiscordIcon from "../SVGIcons/DiscordIcon";
+import TelegramIcon from "../SVGIcons/TelegramIcon";
 
 export default function MobileMenu({
     isOpened,
@@ -27,7 +27,7 @@ export default function MobileMenu({
                     <div className={`flex flex-col gap-10`}>
                         {links?.map((link, idx) => {
                             return (
-                                <a key={idx} href={link.href} className={`text-[48px] leading-none`}>
+                                <a key={idx} href={link.href} onClick={closeMenu} className={`text-[48px] leading-none`}>
                                     {link.label}
                                 </a>
                             )
