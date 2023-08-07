@@ -1,5 +1,5 @@
 import AppButton from "../Common/AppButton";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
 function sleep(ms: number): Promise<void> {
     return new Promise(resolve => setTimeout(resolve, ms))
@@ -16,7 +16,7 @@ function unescapeHTML(html: string) {
 }
 
 // doesn't work if there are nested tags
-function typeAnimate(e: HTMLElement | null) {
+function typeAnimate(e: HTMLElement | null, afterAnimation?: () => void) {
     if (!e || !e.parentElement) return
 
     let isShown = false
@@ -93,12 +93,18 @@ function typeAnimate(e: HTMLElement | null) {
         // animation is ended
         e?.remove()
         newEl.style.setProperty('position', 'static')
+
+        if (afterAnimation) {
+            afterAnimation()
+        }
     })
 
     observer.observe(e)
 }
 
 export default function GetStartedSection() {
+    const [isAnimated, setIsAnimated] = useState(false)
+
     const titleRef = useRef<HTMLDivElement>(null)
     let isUseEffectDone = false
 
@@ -107,7 +113,9 @@ export default function GetStartedSection() {
         isUseEffectDone = true
 
         if (titleRef.current) {
-            typeAnimate(titleRef.current)
+            typeAnimate(titleRef.current, () => {
+                setIsAnimated(true)
+            })
         }
     }, [])
 
@@ -123,10 +131,10 @@ export default function GetStartedSection() {
                     <span className={`italic text-[#E93BD5] font-georgia`}> asset strategies </span>
                     <span className={`opacity-60`}>on any evm-compatible chain</span>
                 </div>
-                <span className={`smmd:max-w-[650px] smmd:pl-[200px] py-8`}>
+                <span className={`smmd:max-w-[650px] smmd:pl-[200px] py-8 ${!isAnimated && 'hidden'}`}>
                     {'With VaultCraft, you can easily create a sophisticated asset strategy in just a few clicks. Whether you\'re new to DeFi, a developer or an experienced investor, VaultCraft makes it easy to create custom asset strategies that fit your specific needs.'}
                 </span>
-                <a className={`smmd:pl-[200px]`} href="https://google.com/">
+                <a className={`smmd:pl-[200px] ${!isAnimated && 'hidden'}`} href="https://google.com/">
                     <AppButton className={`font-bold w-full max-w-[176px]`} text={'Get Started'} />
                 </a>
             </div>
