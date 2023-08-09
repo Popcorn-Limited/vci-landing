@@ -30,10 +30,7 @@ export default function SDKSection() {
     }, [])
 
     return (
-        <div className={`bg-[#030E22] py-[160px] px-[80px] flex gap-[140px] items-end min-h-[750px]`}>
-            <div className={`p-10 bg-[#141416] border-[2px] border-[rgba(255,255,255,0.2)] rounded-[20px]`}>
-                <img className={`w-[420px]`} src="images/SDKSectionCode.png" alt="code" />
-            </div>
+        <div className={`bg-[#030E22] py-[64px] smmd:py-[160px] px-[24px] smmd:px-[80px] flex flex-col smmd:flex-row-reverse gap-[48px] smmd:gap-[140px] items-end min-h-[750px]`}>
             <div className={`grow height-full flex flex-col gap-8`}>
                 <span className={`font-georgia italic text-[#DFFF1C] font-[20px]`}>Vaultcraft SDK</span>
                 <div className={`text-[40px] font-khTeka smmd:text-[56px] leading-none max-w-[600px]`} ref={titleRef}>
@@ -48,6 +45,9 @@ export default function SDKSection() {
                 <a className={`self-start duration-[1s] ${animationStep < 2 && 'opacity-0 translate-y-full'}`} href="https://google.com/">
                     <AppButton className={`font-bold w-full max-w-[176px]`} text={'Start Building'} />
                 </a>
+            </div>
+            <div className={`p-10 bg-[#141416] border-[2px] border-[rgba(255,255,255,0.2)] rounded-[20px] w-full`}>
+                <img className={`w-[420px] m-auto`} src="images/SDKSectionCode.png" alt="code" />
             </div>
         </div>
     )
