@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { HeroSection, GetStartedSection, CardsSection, Partners, Footer } from "@/components/Sections";
+import { HeroSection, GetStartedSection, CardsSection, Partners, Footer, SDKSection } from "@/components/Sections";
 
 
 const IndexPage = ({
@@ -20,6 +20,7 @@ const IndexPage = ({
     <div className="absolute left-0 right-0 flex flex-col bg-[#000000] text-white">
         <HeroSection isLoaded={isLoaded}  />
         <GetStartedSection />
+        <SDKSection />
         <a id="HowItWorks"></a>
         <CardsSection />
         <Partners />
