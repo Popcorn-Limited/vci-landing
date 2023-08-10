@@ -46,7 +46,7 @@ export default function SDKSection() {
                     <AppButton className={`font-bold w-full max-w-[176px]`} text={'Start Building'} />
                 </a>
             </div>
-            <div className={`p-10 bg-[#141416] border-[2px] border-[rgba(255,255,255,0.2)] rounded-[20px] w-full`}>
+            <div className={`p-10 bg-[#141416] border-[2px] border-[rgba(255,255,255,0.2)] rounded-[20px] w-full smmd:w-auto`}>
                 <img className={`w-[420px] m-auto`} src="images/SDKSectionCode.png" alt="code" />
             </div>
         </div>

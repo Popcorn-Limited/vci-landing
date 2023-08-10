@@ -63,31 +63,37 @@ input[type="number"] {
   @font-face {
     font-family: "KH Teka";
     font-weight: 400;
-    src: local("KH Teka"), url(/fonts/KH_Teka/KHTeka-Regular.woff) format("woff");
+    src: local("KH Teka"), url(/public/fonts/KH_Teka/KHTeka-Regular.woff) format("woff");
   }
 
   @font-face {
     font-family: "KH Teka";
     font-weight: 200;
-    src: local("KH Teka"), url(/fonts/KH_Teka/KHTeka-Light.woff) format("woff");
+    src: local("KH Teka"), url(/public/fonts/KH_Teka/KHTeka-Light.woff) format("woff");
   }
 
   @font-face {
     font-family: "KH Teka";
     font-weight: 500;
-    src: local("KH Teka"), url(/fonts/KH_Teka/KHTeka-Medium.woff) format("woff");
+    src: local("KH Teka"), url(/public/fonts/KH_Teka/KHTeka-Medium.woff) format("woff");
   }
 
   @font-face {
     font-family: "KH Teka";
     font-weight: 700;
-    src: local("KH Teka"), url(/fonts/KH_Teka/KHTeka-Bold.woff) format("woff");
+    src: local("KH Teka"), url(/public/fonts/KH_Teka/KHTeka-Bold.woff) format("woff");
   }
 
   @font-face {
     font-family: "KH Teka";
     font-weight: 900;
-    src: local("KH Teka"), url(/fonts/KH_Teka/KHTeka-Black.woff) format("woff");
+    src: local("KH Teka"), url(/public/fonts/KH_Teka/KHTeka-Black.woff) format("woff");
+  }
+
+  @font-face {
+    font-family: "Technos";
+    font-weight: 400;
+    src: local("Technos"), url(/public/fonts/Technos/Technos-PKDZP.woff) format("woff");
   }
   [type="text"]:focus,
   [type="email"]:focus,

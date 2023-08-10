@@ -53,6 +53,7 @@ export default function MyApp(props) {
           <meta name="twitter:image" content={socialShareImage} />
           <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/technos" />
         </Head>
         {getLayout(<Component {...pageProps} />)}
         <Loader isLoading={isLoading} endLoadingAnimation={() => setLoaderAnimationDone(true)} />
