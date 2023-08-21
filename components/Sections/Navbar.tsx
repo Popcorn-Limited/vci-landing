@@ -12,6 +12,10 @@ export default function Navbar() {
                 href: '#HowItWorks',
             },
             {
+                label: 'SDK',
+                href: 'https://docs.pop.network/products/vaultcraft/vaultcraft-sdk',
+            },
+            {
                 label: 'Docs',
                 href: 'https://docs.pop.network/products/vaultcraft',
             }

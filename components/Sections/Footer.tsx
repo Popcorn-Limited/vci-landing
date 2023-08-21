@@ -10,13 +10,13 @@ export default function Footer() {
             href: 'https://app.vaultcraft.io/',
         },
         {
-            label: 'How it works',
-            href: '#HowItWorks'
-        },
-        {
             label: 'Docs',
             href: 'https://docs.pop.network/products/vaultcraft',
-        }
+        },
+        {
+            label: 'SDK',
+            href: 'https://docs.pop.network/products/vaultcraft/vaultcraft-sdk',
+        },
     ]
 
     const scrollToTop = () => scrollTo({
