@@ -115,8 +115,6 @@ export default function CardsSection() {
 
     return (
         <div className={`flex flex-col px-8 py-40 items-center`}>
-            <span className={`font-georgia italic smmd:text-[20px] text-[#DFFF1C] leading-none`}>This is how it works</span>
-            <span className={`pt-4 max-w-[660px] smmd:text-[56px] text-[24px] text-center leading-none`}>Using Vaultcraft is simple and straightforward.</span>
             <div className={`smmd:grid grid-cols-5 justify-between smmd:pt-[130px] pt-[56px] self-stretch`}>
                 <div className={`hidden smmd:flex flex-col gap-1 justify-center`}>
                     {cards.map((card, idx) => {
@@ -139,8 +137,8 @@ export default function CardsSection() {
                                 <div
                                     key={idx}
                                     className={`
-                                        p-8 absolute top-0 left-[50%] flex flex-col gap-8 w-full md:w-[512px] smmd:w-[420px] h-[420px] smmd:h-[660px]
-                                        bg-[#141416] border-[1px] border-[#555] rounded-[20px] duration-500 overflow-hidden
+                                        absolute top-0 left-[50%] flex flex-col gap-8 w-full md:w-[512px] smmd:w-[420px] h-[420px] smmd:h-[660px]
+                                        bg-[#141416] rounded-[20px] duration-500 overflow-hidden
                                         ${selectedCard === idx ? '' : `opacity-80`}
                                     `}
                                     style={{
@@ -153,8 +151,6 @@ export default function CardsSection() {
                                         `,
                                     }}
                                 >
-                                    <span className={`text-[32px]`}>{card.title}</span>
-                                    <span>{card.description}</span>
                                     <img src={card.image} className={`w-full`} />
                                 </div>
                             )
