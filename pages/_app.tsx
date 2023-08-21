@@ -4,8 +4,8 @@ import "../styles/globals.css";
 import { Loader } from "@/components/Sections";
 
 const { title, description, socialShareImage } = {
-  title: "Popcorn - Yield That Counts",
-  description: "Popcorn is a regenerative yield optimizing protocol.",
+  title: "VaultCraft - Yield your way",
+  description: "VaultCraft is a decentralized protocol to create, manage, and optimize yield vaults.",
   socialShareImage: "https://www.popcorn.network/images/social_cover_image.png",
 };
 
@@ -38,7 +38,7 @@ export default function MyApp(props) {
           <meta name="description" content={description} />
 
           {/*  Facebook Meta Tags */}
-          <meta property="og:url" content="https://popcorn.network/" />
+          <meta property="og:url" content="https://vaultcraft.io/" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content={title} />
           <meta property="og:description" content={description} />
@@ -46,8 +46,8 @@ export default function MyApp(props) {
 
           {/* Twitter Meta Tags */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta property="twitter:domain" content="popcorn.network" />
-          <meta property="twitter:url" content="https://popcorn.network/" />
+          <meta property="twitter:domain" content="vaultcraft.io" />
+          <meta property="twitter:url" content="https://vaultcraft.io/" />
           <meta name="twitter:title" content={title} />
           <meta name="twitter:description" content={description} />
           <meta name="twitter:image" content={socialShareImage} />
