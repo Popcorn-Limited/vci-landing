@@ -14,8 +14,8 @@ export default function Footer() {
             href: '#HowItWorks'
         },
         {
-            label: 'Contact',
-            href: '#Footer'
+            label: 'Docs',
+            href: 'https://docs.pop.network/products/vaultcraft',
         }
     ]
 
@@ -71,8 +71,8 @@ export default function Footer() {
                         <div className={`col-span-full bg-[#D7D7D7] h-[1px] w-full my-4`}></div>
                         <span>Vaultcraft by Popcorn 2023</span>
                         <div className={`flex gap-6 justify-center row-start-1 smmd:row-start-auto col-span-full smmd:col-span-1`}>
-                            <a href="https://google.com/" className={`hover:text-[#DFFF1C] duration-[0.25s]`}>Terms of Use</a>
-                            <a href="https://google.com/" className={`hover:text-[#DFFF1C] duration-[0.25s]`}>Privacy Policy</a>
+                            <a href="https://app.vaultcraft.io/dislcaimer" className={`hover:text-[#DFFF1C] duration-[0.25s]`}>Terms of Use</a>
+                            <a href="https://app.vaultcraft.io/dislcaimer" className={`hover:text-[#DFFF1C] duration-[0.25s]`}>Privacy Policy</a>
                         </div>
                         <div className={`flex justify-end`}>
                             <button className={`flex gap-3 items-center`} type="button" onClick={scrollToTop}>

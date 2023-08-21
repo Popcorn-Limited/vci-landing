@@ -12,8 +12,8 @@ export default function Navbar() {
                 href: '#HowItWorks',
             },
             {
-                label: 'Contact',
-                href: '#Footer',
+                label: 'Docs',
+                href: 'https://docs.pop.network/products/vaultcraft',
             }
         ]
 
