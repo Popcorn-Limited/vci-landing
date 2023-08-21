@@ -41,7 +41,7 @@ export default function GetStartedSection() {
                     <span className={`opacity-60`}>on any evm-compatible chain</span>
                 </div>
                 <span className={`smmd:max-w-[650px] smmd:pl-[200px] py-8 ${animationStep < 1 && 'opacity-0'}`} ref={descriptionRef}>
-                    {'With VaultCraft, you can easily create a sophisticated asset strategy in just a few clicks. Whether you\'re new to DeFi, a developer or an experienced investor, VaultCraft makes it easy to create custom asset strategies that fit your specific needs.'}
+                    {'With VaultCraft, you can easily create a sophisticated asset strategy in just a few clicks. Whether you\'re new to DeFi, a developer or an experienced portfolio manager, VaultCraft makes it easy to create custom asset strategies that fit your specific needs.'}
                 </span>
                 <div className={`smmd:pl-[200px] duration-[1s] ${animationStep < 2 && 'opacity-0 translate-y-full'}`}>
                     <a href="https://google.com/">
