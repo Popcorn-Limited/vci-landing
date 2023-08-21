@@ -7,15 +7,15 @@ export default function Footer() {
     const links = [
         {
             label: 'dApp',
-            href: 'https://google.com/',
+            href: 'https://app.vaultcraft.io/',
         },
         {
             label: 'How it works',
-            href: 'https://google.com/'
+            href: '#HowItWorks'
         },
         {
             label: 'Contact',
-            href: 'https://google.com/'
+            href: '#Footer'
         }
     ]
 
@@ -53,14 +53,8 @@ export default function Footer() {
                                 {`We'd love to hear from you! Whether you're a developer, investor, or simply curious about our platform, drop us a line and we'll be happy to connect.`}
                             </span>
                             <div className={`flex gap-2`}>
-                                <a className={`p-3 bg-[#141416] text-[#D7D7D7] hover:text-[#DFFF1C] duration-[0.25s] opacity-80 rounded-[50%]`} href="https://google.com/">
+                                <a className={`p-3 bg-[#141416] text-[#D7D7D7] hover:text-[#DFFF1C] duration-[0.25s] opacity-80 rounded-[50%]`} href="https://twitter.com/Popcorn_DAO">
                                     <TwitterIcon color={'currentColor'} size={'24px'} />
-                                </a>
-                                <a className={`p-3 bg-[#141416] text-[#D7D7D7] hover:text-[#DFFF1C] duration-[0.25s] opacity-80 rounded-[50%]`} href="https://google.com/">
-                                    <DiscordIcon color={'currentColor'} size={'24px'} />
-                                </a>
-                                <a className={`p-3 bg-[#141416] text-[#D7D7D7] hover:text-[#DFFF1C] duration-[0.25s] opacity-80 rounded-[50%]`} href="https://google.com/">
-                                    <TelegramIcon color={'currentColor'} size={'24px'} />
                                 </a>
                             </div>
                         </div>
