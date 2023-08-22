@@ -50,7 +50,7 @@ export default function Footer() {
                         <div className={`flex flex-col gap-4 smmd:pt-[56px]`}>
                             <span className={`text-[40px] smmd:text-[56px]`}>Get in Touch</span>
                             <span className={`text-[14px] smmd:text-[18px] w-full smmd:max-w-[450px]`}>
-                                {`We'd love to hear from you! Whether you're a developer, investor, or simply curious about our platform, drop us a line and we'll be happy to connect.`}
+                                {`We'd love to hear from you! Whether you're a developer, allocator, or simply curious about our platform, drop us a line and we'll be happy to connect.`}
                             </span>
                             <div className={`flex gap-2`}>
                                 <a className={`p-3 bg-[#141416] text-[#D7D7D7] hover:text-[#DFFF1C] duration-[0.25s] opacity-80 rounded-[50%]`} href="https://twitter.com/Popcorn_DAO">

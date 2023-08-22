@@ -34,7 +34,7 @@ export default function SDKSection() {
             <div className={`grow height-full flex flex-col gap-8`}>
                 <span className={`font-georgia italic text-[#DFFF1C] font-[20px]`}>Vaultcraft SDK</span>
                 <div className={`text-[40px] font-khTeka smmd:text-[56px] leading-none max-w-[600px]`} ref={titleRef}>
-                    Cross‑chain stake, deposit, withdraw with
+                    Build cross‑chain automated vault strategies with just a 
                     <span className={`italic text-[#F289E6] font-georgia`}> few lines of code</span>
                 </div>
                 <span className={`max-w-[500px] whitespace-pre-line ${animationStep < 1 && 'opacity-0'}`} ref={descriptionRef}>
