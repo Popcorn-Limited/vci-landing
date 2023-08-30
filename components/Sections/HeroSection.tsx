@@ -20,7 +20,8 @@ export default function HeroSection({
 
     return (
         <>
-            <video className={`absolute w-full object-cover h-[900px]`} src="videos/HeroSectionVideo.mp4" loop muted autoPlay />
+            <video className={`hidden smmd:block absolute w-full object-cover h-[900px]`} src="videos/HeroSectionVideo.mp4" loop muted autoPlay />
+            <img className={`smmd:hidden absolute w-full object-cover h-[900px]`} src="/images/MobileHeroSectionBg.png" />
             <div className={`h-[900px] flex flex-col`}>
                 <Navbar />
                 <div className={`w-full grow z-10 py-12 smmd:py-[100px] px-6 smmd:px-8 flex smmd:gap-10 flex-col smmd:flex-row justify-between items-end`}>
