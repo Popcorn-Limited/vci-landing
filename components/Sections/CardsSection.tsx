@@ -7,27 +7,22 @@ export default function CardsSection() {
     const cards = [
         {
             title: 'Asset Selection',
-            description: 'The denomination asset is the asset in which depositors deposit into your vault and which the vault’s share price and the performance are measured',
             image: 'images/cards/AssetSelection.png'
         },
         {
             title: 'Protocol Selection',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ut labore et dolore magna.',
             image: 'images/cards/ProtocolSelection.png'
         },
         {
             title: 'Adapter Selection',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ut labore et dolore magna.',
             image: 'images/cards/AdapterSelection.png'
         },
         {
             title: 'Choose Strategy',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ut labore et dolore magna.',
             image: 'images/cards/ChooseStrategy.png'
         },
         {
             title: 'Fees Configuration',
-            description: 'Vault managers can charge several types of fees, all of which are paid out in shares of the vault.  Fees can be changed at any time after fund creation',
             image: 'images/cards/FeesConfiguration.png'
         },
     ]
@@ -139,7 +134,7 @@ export default function CardsSection() {
                                 <div
                                     key={idx}
                                     className={`
-                                        p-8 absolute top-0 left-[50%] flex flex-col gap-8 w-full md:w-[512px] smmd:w-[420px] h-[420px] smmd:h-[660px]
+                                        absolute top-0 left-[50%] w-full md:w-[512px] smmd:w-[420px] h-[420px] smmd:h-[660px]
                                         bg-[#141416] border-[1px] border-[#555] rounded-[20px] duration-500 overflow-hidden
                                         ${selectedCard === idx ? '' : `opacity-80`}
                                     `}
@@ -153,8 +148,6 @@ export default function CardsSection() {
                                         `,
                                     }}
                                 >
-                                    <span className={`text-[32px]`}>{card.title}</span>
-                                    <span>{card.description}</span>
                                     <img src={card.image} className={`w-full`} />
                                 </div>
                             )

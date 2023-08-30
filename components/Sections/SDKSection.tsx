@@ -30,10 +30,10 @@ export default function SDKSection() {
     }, [])
 
     return (
-        <div className={`bg-[#030E22] py-[64px] smmd:py-[160px] px-[24px] smmd:px-[80px] flex flex-col smmd:flex-row-reverse gap-[48px] smmd:gap-[140px] items-end min-h-[750px]`}>
-            <div className={`grow height-full flex flex-col gap-8`}>
+        <div className={`bg-[#030E22] py-[64px] smmd:py-[160px] px-[24px] smmd:px-[80px] flex flex-col smmd:flex-row-reverse gap-[48px] justify-between items-end min-h-[750px]`}>
+            <div className={`height-full flex flex-col gap-8 smmd:w-[680px]`}>
                 <span className={`font-georgia italic text-[#DFFF1C] font-[20px]`}>Vaultcraft SDK</span>
-                <div className={`text-[40px] font-khTeka smmd:text-[56px] leading-none max-w-[600px]`} ref={titleRef}>
+                <div className={`text-[40px] font-khTeka smmd:text-[56px] leading-none max-w-[655px]`} ref={titleRef}>
                     Cross‑chain stake, deposit, withdraw with
                     <span className={`italic text-[#F289E6] font-georgia`}> few lines of code</span>
                 </div>

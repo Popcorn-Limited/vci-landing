@@ -58,6 +58,7 @@ export default function Navbar() {
                                     ref={el => linksRef.current[idx] = el}
                                     className={`flex items-center px-2 font-medium duration-[inherit] hover:text-white`}
                                     onMouseEnter={() => changeUnderLinkPosition(idx)}
+                                    onMouseLeave={() => underLinkRef.current?.style.setProperty('visibility', 'hidden')}
                                 >
                                     {link.label}
                                 </a>
