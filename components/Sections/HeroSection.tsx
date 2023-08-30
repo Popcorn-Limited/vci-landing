@@ -25,7 +25,7 @@ export default function HeroSection({
             <div className={`h-[900px] flex flex-col`}>
                 <Navbar />
                 <div className={`w-full grow z-10 py-12 smmd:py-[100px] px-6 smmd:px-8 flex smmd:gap-10 flex-col smmd:flex-row justify-between items-end`}>
-                    <span className={`text-[40px] smmd:text-[80px] max-w-[1000px] leading-none`}>Create custom automated asset strategies in minutes with Vaultcraft</span>
+                    <span className={`text-[40px] smmd:text-[80px] max-w-[1000px] leading-none`}>Build custom, automated DeFi strategies in minutes with <b>VaultCraft</b></span>
                     <div className={`rotate-180 uppercase flex items-center gap-2 smmd:pl-12`} style={{
                         writingMode: 'vertical-rl',
                     }}>

@@ -7,15 +7,19 @@ export default function Navbar() {
         label: string
         href: string
     }[] = [
-        {
-            label: 'How it works',
-            href: '#HowItWorks',
-        },
-        {
-            label: 'Contact',
-            href: '#Footer',
-        }
-    ]
+            {
+                label: 'How it works',
+                href: '#HowItWorks',
+            },
+            {
+                label: 'SDK',
+                href: 'https://docs.pop.network/products/vaultcraft/vaultcraft-sdk',
+            },
+            {
+                label: 'Docs',
+                href: 'https://docs.pop.network/products/vaultcraft',
+            }
+        ]
 
     const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false)
     const linksRef = useRef<(HTMLElement | null)[]>([])
@@ -46,7 +50,7 @@ export default function Navbar() {
     return (
         <>
             <div className={`p-8 flex justify-between text-white items-center z-10`}>
-                <img className={`h-10 w-10`} src={`images/icons/popLogoWhite.svg`} alt="logo"/>
+                <img className={`h-10 w-10`} src={`images/icons/popLogoWhite.svg`} alt="logo" />
                 <div className={`flex gap-4 items-stretch relative`}>
                     <span className={`hidden smmd:block invisible absolute duration-[0.75s] w-1.5 h-1.5 rounded-[1px] bottom-0 bg-[#DFFF1C]`} ref={underLinkRef} />
                     <div className={`hidden smmd:flex duration-[0.25s] text-white hover:text-gray-400`}>
@@ -65,13 +69,13 @@ export default function Navbar() {
                             )
                         })}
                     </div>
-                    <a href="https://google.com/">
+                    <a href="https://app.vaultcraft.io/">
                         <AppButton className={`font-bold`} text={`Launch APP`} />
                     </a>
                     <button className={`smmd:hidden relative w-12 h-1 rounded-[24px] my-auto bg-white
                     before:w-full before:h-1 before:duration-[0.25s] before:absolute before:bottom-3 before:left-0 before:rounded-[24px] before:bg-white
                     after:w-full after:h-1 after:duration-[0.25s] after:absolute after:top-3 after:left-0 after:rounded-[24px] after:bg-white`}
-                            onClick={() => setIsMobileMenuOpened(true)}
+                        onClick={() => setIsMobileMenuOpened(true)}
                     />
                 </div>
             </div>

@@ -7,16 +7,16 @@ export default function Footer() {
     const links = [
         {
             label: 'dApp',
-            href: 'https://google.com/',
+            href: 'https://app.vaultcraft.io/',
         },
         {
-            label: 'How it works',
-            href: 'https://google.com/'
+            label: 'Docs',
+            href: 'https://docs.pop.network/products/vaultcraft',
         },
         {
-            label: 'Contact',
-            href: 'https://google.com/'
-        }
+            label: 'SDK',
+            href: 'https://docs.pop.network/products/vaultcraft/vaultcraft-sdk',
+        },
     ]
 
     const scrollToTop = () => scrollTo({
@@ -50,17 +50,11 @@ export default function Footer() {
                         <div className={`flex flex-col gap-4 smmd:pt-[56px]`}>
                             <span className={`text-[40px] smmd:text-[56px]`}>Get in Touch</span>
                             <span className={`text-[14px] smmd:text-[18px] w-full smmd:max-w-[450px]`}>
-                                {`We'd love to hear from you! Whether you're a developer, investor, or simply curious about our platform, drop us a line and we'll be happy to connect.`}
+                                {`We'd love to hear from you! Whether you're a developer, allocator, or simply curious about our platform, drop us a line and we'll be happy to connect.`}
                             </span>
                             <div className={`flex gap-2`}>
-                                <a className={`p-3 bg-[#141416] text-[#D7D7D7] hover:text-[#DFFF1C] duration-[0.25s] opacity-80 rounded-[50%]`} href="https://google.com/">
+                                <a className={`p-3 bg-[#141416] text-[#D7D7D7] hover:text-[#DFFF1C] duration-[0.25s] opacity-80 rounded-[50%]`} href="https://twitter.com/Popcorn_DAO">
                                     <TwitterIcon color={'currentColor'} size={'24px'} />
-                                </a>
-                                <a className={`p-3 bg-[#141416] text-[#D7D7D7] hover:text-[#DFFF1C] duration-[0.25s] opacity-80 rounded-[50%]`} href="https://google.com/">
-                                    <DiscordIcon color={'currentColor'} size={'24px'} />
-                                </a>
-                                <a className={`p-3 bg-[#141416] text-[#D7D7D7] hover:text-[#DFFF1C] duration-[0.25s] opacity-80 rounded-[50%]`} href="https://google.com/">
-                                    <TelegramIcon color={'currentColor'} size={'24px'} />
                                 </a>
                             </div>
                         </div>
@@ -77,8 +71,8 @@ export default function Footer() {
                         <div className={`col-span-full bg-[#D7D7D7] h-[1px] w-full my-4`}></div>
                         <span>Vaultcraft by Popcorn 2023</span>
                         <div className={`flex gap-6 justify-center row-start-1 smmd:row-start-auto col-span-full smmd:col-span-1`}>
-                            <a href="https://google.com/" className={`hover:text-[#DFFF1C] duration-[0.25s]`}>Terms of Use</a>
-                            <a href="https://google.com/" className={`hover:text-[#DFFF1C] duration-[0.25s]`}>Privacy Policy</a>
+                            <a href="https://app.vaultcraft.io/dislcaimer" className={`hover:text-[#DFFF1C] duration-[0.25s]`}>Terms of Use</a>
+                            <a href="https://app.vaultcraft.io/dislcaimer" className={`hover:text-[#DFFF1C] duration-[0.25s]`}>Privacy Policy</a>
                         </div>
                         <div className={`flex justify-end`}>
                             <button className={`flex gap-3 items-center`} type="button" onClick={scrollToTop}>

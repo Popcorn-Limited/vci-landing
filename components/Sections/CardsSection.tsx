@@ -66,7 +66,7 @@ export default function CardsSection() {
             const currentScroll = window.scrollY
 
             if (currentScroll > topScroll && currentScroll < bottomScroll) {
-                if(!isCardScrollingBlocked) {
+                if (!isCardScrollingBlocked) {
                     isCardScrollingBlocked = true
 
                     if (currentScroll > previousScroll) {
@@ -110,14 +110,16 @@ export default function CardsSection() {
 
     return (
         <div className={`flex flex-col px-8 py-40 items-center`}>
-            <span className={`font-georgia italic smmd:text-[20px] text-[#DFFF1C] leading-none`}>This is how it works</span>
-            <span className={`pt-4 max-w-[660px] smmd:text-[56px] text-[24px] text-center leading-none`}>Using Vaultcraft is simple and straightforward.</span>
+            <p className={`font-georgia italic text-[#DFFF1C] font-[20px]`}>Vaultcraft SDK</p>
+            <h2 className={`text-[40px] font-khTeka smmd:text-[56px] leading-none max-w-[800px] text-center`}>
+                Using Vaultcraft is simple and straightforward.
+            </h2>
             <div className={`smmd:grid grid-cols-5 justify-between smmd:pt-[130px] pt-[56px] self-stretch`}>
                 <div className={`hidden smmd:flex flex-col gap-1 justify-center`}>
                     {cards.map((card, idx) => {
                         return (
                             <span
-                                className={`flex items-center cursor-pointer text-[14px] duration-500 ${selectedCard !== idx && 'opacity-60' }`}
+                                className={`flex items-center cursor-pointer text-[14px] duration-500 ${selectedCard !== idx && 'opacity-60'}`}
                                 key={idx}
                                 onClick={() => setSelectedCard(idx)}
                             >
@@ -161,19 +163,19 @@ export default function CardsSection() {
                     <span>
                         {
                             (selectedCard + 1).toLocaleString('en-US', {
-                            minimumIntegerDigits: 2,
-                            useGrouping: false
-                        })
+                                minimumIntegerDigits: 2,
+                                useGrouping: false
+                            })
                         }
                         &nbsp;/&nbsp;
                         <span className={`opacity-60`}>
-                    {
-                        cards.length.toLocaleString('en-US', {
-                            minimumIntegerDigits: 2,
-                            useGrouping: false
-                        })
-                    }
-                    </span>
+                            {
+                                cards.length.toLocaleString('en-US', {
+                                    minimumIntegerDigits: 2,
+                                    useGrouping: false
+                                })
+                            }
+                        </span>
                     </span>
                     <button className={`smmd:hidden`} onClick={handleNextCard}>
                         <RightArrowIcon color={`white`} />
