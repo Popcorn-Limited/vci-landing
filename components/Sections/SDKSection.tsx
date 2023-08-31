@@ -38,9 +38,9 @@ export default function SDKSection() {
                     <span className={`italic text-[#F289E6] font-georgia`}> few lines of code</span>
                 </h2>
                 <span className={`max-w-[500px] whitespace-pre-line ${animationStep < 1 && 'opacity-0'}`} ref={descriptionRef}>
-                    {`Work seamlessly with any token and from any chain.
-                        Integrate the Vaulcraft widget with just few lines of code.
-                        Looking for a completely custom UX? Use the Vaulcraft API & SDK instead.`}
+                    <p>Work seamlessly with any token and from any chain.</p><br className="hidden md:block" />
+                    <p>Integrate the Vaulcraft widget with just few lines of code.</p><br className="hidden md:block" />
+                    <p>Looking for a completely custom UX? Use the Vaulcraft API & SDK instead.</p><br className="hidden md:block" />
                 </span>
                 <a className={`self-start duration-[1s] ${animationStep < 2 && 'opacity-0 translate-y-full'}`} href="https://docs.pop.network/products/vaultcraft">
                     <AppButton className={`font-bold w-full max-w-[176px]`} text={'Start Building'} />
