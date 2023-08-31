@@ -30,7 +30,7 @@ export default function GetStartedSection() {
 
     return (
         <div className={`min-h-[1100px] bg-gradient-to-b from-black to-[#030E22] pt-60 smmd:pl-8 smmd:pr-0 flex flex-col smmd:flex-row smmd:gap-5 gap-16`}>
-            <div className={`flex flex-col smmd:pb-5 px-6 items-start`}>
+            <div className={`flex flex-col smmd:pb-5 px-6 items-start z-10`}>
                 <div className={`text-[40px] smmd:text-[56px] max-w-[740px] leading-none`} ref={titleRef}>
                     <span className={`opacity-60`}>The</span>
                     <span className={`italic text-[#7AFB79] font-georgia opacity-100`}> no code toolkit </span>
@@ -49,7 +49,7 @@ export default function GetStartedSection() {
                     </a>
                 </div>
             </div>
-            <video src="videos/GetStartedVideo.mov" className={`self-end w-full smmd:max-w-[600px] h-[550px] object-cover`} loop muted autoPlay />
+            <img src="/images/GetStartedSectionBg.png" className={`absolute top-0 right-0 max-w-[1300px] top-[970px]`} />
         </div>
     )
 }
