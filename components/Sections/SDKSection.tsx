@@ -31,7 +31,7 @@ export default function SDKSection() {
 
     return (
         <div className={`bg-[#030E22] py-[64px] smmd:py-[160px] px-[24px] smmd:px-[80px] flex flex-col smmd:flex-row-reverse gap-[48px] justify-between items-end min-h-[750px]`}>
-            <div className={`height-full flex flex-col gap-8 smmd:w-[680px]`}>
+            <div className={`height-full flex flex-col gap-8 smmd:w-[680px] z-[1]`}>
                 <p className={`font-georgia italic text-[#DFFF1C] font-[20px]`}>Vaultcraft SDK</p>
                 <h2 className={`text-[40px] font-khTeka smmd:text-[56px] leading-none max-w-[655px]`} ref={titleRef}>
                     Build cross‑chain automated vault strategies with just a
@@ -46,7 +46,7 @@ export default function SDKSection() {
                     <AppButton className={`font-bold w-full max-w-[176px]`} text={'Start Building'} />
                 </a>
             </div>
-            <div className={`px-10 w-full smmd:w-auto`}>
+            <div className={`smmd:px-10 w-full smmd:w-auto`}>
                 <img className={`w-[420px] m-auto`} src="images/SDKSectionCode.png" alt="code" />
             </div>
         </div>

@@ -17,7 +17,7 @@ const IndexPage = ({
   }, [router.pathname]);
 
   return (
-    <div className="absolute left-0 right-0 flex flex-col bg-[#000000] text-white">
+    <div className="absolute left-0 right-0 flex flex-col bg-[#000000] text-white overflow-hidden">
         <HeroSection isLoaded={isLoaded}  />
         <GetStartedSection />
         <SDKSection />
