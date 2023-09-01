@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import AppButton from "@/components/Common/AppButton";
 import { typeAnimate } from "@/helpers/typingAnimation";
+import { useWindowSize } from "@uidotdev/usehooks";
 
 export default function SDKSection() {
     const [animationStep, setAnimationStep] = useState(0)
@@ -8,6 +9,10 @@ export default function SDKSection() {
     const titleRef = useRef<HTMLDivElement>(null)
     const descriptionRef = useRef<HTMLDivElement>(null)
     let isUseEffectDone = false
+
+    const {
+        width: windowWidth,
+    } = useWindowSize()
 
     useEffect(() => {
         if (isUseEffectDone) return
@@ -38,9 +43,7 @@ export default function SDKSection() {
                     <span className={`italic text-[#F289E6] font-georgia`}> few lines of code</span>
                 </h2>
                 <span className={`max-w-[500px] whitespace-pre-line ${animationStep < 1 && 'opacity-0'}`} ref={descriptionRef}>
-                    {`Work seamlessly with any token and from any chain.
-                        Integrate the Vaulcraft widget with just few lines of code.
-                        Looking for a completely custom UX? Use the Vaulcraft API & SDK instead.`}
+                    {`Work seamlessly with any token and from any chain.${windowWidth >= 700 ? '\n' : ' '}Integrate the Vaulcraft widget with just few lines of code.${windowWidth >= 700 ? '\n' : ' '}Looking for a completely custom UX? Use the Vaulcraft API & SDK instead.`}
                 </span>
                 <a className={`self-start duration-[1s] ${animationStep < 2 && 'opacity-0 translate-y-full'}`} href="https://docs.pop.network/products/vaultcraft">
                     <AppButton className={`font-bold w-full max-w-[176px]`} text={'Start Building'} />

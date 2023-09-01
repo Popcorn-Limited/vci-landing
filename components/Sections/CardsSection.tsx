@@ -32,8 +32,6 @@ export default function CardsSection() {
 
     const {
         width: windowWidth,
-    }: {
-        width: number
     } = useWindowSize()
 
     const handleBackCard = () => {
