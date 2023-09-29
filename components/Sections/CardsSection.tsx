@@ -1,7 +1,8 @@
+// @ts-ignore
+import { useWindowSize } from "@uidotdev/usehooks";
 import { useState, useRef, useEffect } from "react";
 import RightArrowIcon from "../SVGIcons/RightArrowIcon";
 import LeftArrowIcon from "../SVGIcons/LeftArrowIcon";
-import { useWindowSize } from "@uidotdev/usehooks";
 
 export default function CardsSection() {
     const cards = [
