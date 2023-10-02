@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { HeroSection, GetStartedSection, CardsSection, Partners, Footer, SDKSection, BannerSection } from "@/components/Sections";
+import { HeroSection, GetStartedSection, CardsSection, Partners, Footer, SDKSection, TGESection } from "@/components/Sections";
 
 
 const IndexPage = ({
@@ -22,7 +22,7 @@ const IndexPage = ({
         <GetStartedSection />
         <SDKSection />
         <a id="tge"></a>
-        <BannerSection />
+        <TGESection />
         <a id="HowItWorks"></a>
         <CardsSection />
         <Partners />
