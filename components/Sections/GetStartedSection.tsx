@@ -7,25 +7,27 @@ export default function GetStartedSection() {
 
     const titleRef = useRef<HTMLDivElement>(null)
     const descriptionRef = useRef<HTMLDivElement>(null)
-    let isUseEffectDone = false
+
+
 
     useEffect(() => {
-        if (isUseEffectDone) return
-        isUseEffectDone = true
-
-        if (titleRef.current) {
-            typeAnimate(titleRef.current, {
-                afterAnimation: () => {
-                    typeAnimate(descriptionRef.current, {
-                        speed: 10,
-                        afterAnimation: () => {
-                            setAnimationStep(2)
-                        }
-                    })
-                    setAnimationStep(1)
-                }
-            })
-        }
+        // function animate() {
+        //     if (titleRef.current) {
+        //         typeAnimate(titleRef.current, {
+        //             speed: 33,
+        //             afterAnimation: () => {
+        //                 typeAnimate(descriptionRef.current, {
+        //                     speed: 10,
+        //                     afterAnimation: () => {
+        //                         setAnimationStep(2)
+        //                     }
+        //                 })
+        //                 setAnimationStep(1)
+        //             }
+        //         })
+        //     }
+        // }
+        // if (animationStep === 0) animate()
     }, [])
 
     return (
@@ -40,16 +42,16 @@ export default function GetStartedSection() {
                     <span className={`italic text-[#E93BD5] font-georgia`}> asset strategies </span>
                     <span className={`opacity-60`}>on any evm-compatible chain</span>
                 </div>
-                <span className={`smmd:max-w-[650px] smmd:pl-[200px] py-8 ${animationStep < 1 && 'opacity-0'}`} ref={descriptionRef}>
+                <span className={`smmd:max-w-[650px] smmd:pl-[200px] py-8`} ref={descriptionRef}>
                     {'With VaultCraft, you can easily create a cross-chain asset strategy in just a few clicks. Whether you\'re new to DeFi, a developer or a portfolio manager, VaultCraft makes it easy to create custom vaults  that fit your specific needs.'}
                 </span>
-                <div className={`smmd:pl-[200px] duration-[1s] ${animationStep < 2 && 'opacity-0 translate-y-full'}`}>
+                <div className={`smmd:pl-[200px]`}>
                     <a href="https://docs.pop.network/products/vaultcraft">
                         <AppButton className={`font-bold w-full max-w-[176px]`} text={'Get Started'} />
                     </a>
                 </div>
             </div>
-            <img src="/images/GetStartedSectionBg.png" className={`absolute top-0 right-0 max-w-[1300px] top-[970px]`} />
+            <img src="/images/GetStartedSectionBg.png" className={`absolute right-0 max-w-[1300px] top-[970px]`} />
         </div>
     )
 }
