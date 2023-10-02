@@ -18,6 +18,14 @@ export default function Navbar() {
             {
                 label: 'Docs',
                 href: 'https://docs.pop.network/products/vaultcraft',
+            },
+            {
+                label: 'Earn',
+                href: 'https://app.pop.network/sweet-vaults',
+            },
+            {
+                label: 'VCX Token',
+                href: '#tge',
             }
         ]
 
@@ -70,7 +78,7 @@ export default function Navbar() {
                         })}
                     </div>
                     <a href="https://app.vaultcraft.io/">
-                        <AppButton className={`font-bold`} text={`Launch APP`} />
+                        <AppButton className={`font-bold`} text={`Launch App`} />
                     </a>
                     <button className={`smmd:hidden relative w-12 h-1 rounded-[24px] my-auto bg-white
                     before:w-full before:h-1 before:duration-[0.25s] before:absolute before:bottom-3 before:left-0 before:rounded-[24px] before:bg-white
