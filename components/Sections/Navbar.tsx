@@ -21,7 +21,7 @@ export default function Navbar() {
             },
             {
                 label: 'Earn',
-                href: 'https://app.pop.network/sweet-vaults',
+                href: 'https://app.pop.network/vaults',
             },
             {
                 label: 'VCX Token',
