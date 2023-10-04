@@ -3,32 +3,8 @@ import { useRef, useEffect, useState } from "react";
 import { typeAnimate } from "@/helpers/typingAnimation";
 
 export default function GetStartedSection() {
-    const [animationStep, setAnimationStep] = useState(0)
-
     const titleRef = useRef<HTMLDivElement>(null)
     const descriptionRef = useRef<HTMLDivElement>(null)
-
-
-
-    useEffect(() => {
-        // function animate() {
-        //     if (titleRef.current) {
-        //         typeAnimate(titleRef.current, {
-        //             speed: 33,
-        //             afterAnimation: () => {
-        //                 typeAnimate(descriptionRef.current, {
-        //                     speed: 10,
-        //                     afterAnimation: () => {
-        //                         setAnimationStep(2)
-        //                     }
-        //                 })
-        //                 setAnimationStep(1)
-        //             }
-        //         })
-        //     }
-        // }
-        // if (animationStep === 0) animate()
-    }, [])
 
     return (
         <div className={`min-h-[1100px] bg-gradient-to-b from-black to-[#030E22] pt-60 smmd:pl-8 smmd:pr-0 flex flex-col smmd:flex-row smmd:gap-5 gap-16`}>
