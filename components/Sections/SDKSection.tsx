@@ -45,11 +45,11 @@ export default function SDKSection() {
                             Build cross‑chain automated vault strategies with just a
                             <span className={`italic text-[#F289E6] font-georgia`}> few lines of code</span>
                         </h2>
-                        <span className={`max-w-[500px] whitespace-pre-line`}>
-                            <p className={`py-[12px] mt-[20px]`}>Work seamlessly with any token and from any chain.</p>
-                            <p className={`py-[12px]`}>Integrate the Vaulcraft widget with just a few lines of code.</p>
-                            <p className={`py-[12px]`}>Looking for a completely custom UX? Use the Vaulcraft API & SDK instead.</p>
-                        </span>
+                        <div className={`max-w-[500px] whitespace-pre-line pt-8`}>
+                            <p>Work seamlessly with any token and from any chain.</p>
+                            <p>Integrate the Vaulcraft widget with just few lines of code.</p>
+                            <p>Looking for a completely custom UX? Use the Vaulcraft API & SDK instead.</p>
+                        </div>
                     </Typist>
                 )}
                 {typingDone && (
