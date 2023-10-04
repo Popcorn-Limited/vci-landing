@@ -4,7 +4,7 @@ require("./lib/env/envLoader");
 const workspace = join(__dirname, "..");
 
 module.exports = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   typescript: {
     ignoreBuildErrors: true,
   },
