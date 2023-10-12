@@ -8,8 +8,8 @@ export default function Navbar() {
         href: string
     }[] = [
             {
-                label: 'How it works',
-                href: '#HowItWorks',
+                label: 'Earn',
+                href: 'https://app.pop.network/vaults',
             },
             {
                 label: 'SDK',
@@ -20,8 +20,8 @@ export default function Navbar() {
                 href: 'https://docs.pop.network/products/vaultcraft',
             },
             {
-                label: 'Earn',
-                href: 'https://app.pop.network/vaults',
+                label: 'Partner Program',
+                href: 'https://b7qv6rd6w5c.typeform.com/to/g18olMKI?typeform-source=docs.pop.network',
             },
             {
                 label: 'VCX Token',
