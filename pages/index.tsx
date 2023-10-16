@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { HeroSection, GetStartedSection, CardsSection, Partners, Footer, SDKSection, TGESection } from "@/components/Sections";
+import { Analytics } from '@vercel/analytics/react';
 
 
 const IndexPage = ({
@@ -28,6 +29,7 @@ const IndexPage = ({
       <Partners />
       <a id="Footer"></a>
       <Footer />
+      <Analytics />
     </div >
   );
 };

@@ -61,7 +61,6 @@ export default function MyApp(props: any) {
       </Head>
       {getLayout(<Component {...pageProps} />)}
       <Loader isLoading={isLoading} endLoadingAnimation={() => setLoaderAnimationDone(true)} />
-      <Analytics />
     </React.Fragment>
   );
 }
