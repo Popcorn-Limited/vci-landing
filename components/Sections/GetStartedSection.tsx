@@ -54,7 +54,7 @@ export default function GetStartedSection() {
                 )}
                 {typingDone && (
                     <div style={{ opacity: opacity, transition: 'opacity 1000ms ease-in-out' }} className={`smmd:pl-[200px]`}>
-                        <a href="https://docs.pop.network/products/vaultcraft">
+                        <a href="https://docs.vaultcraft.io/welcome-to-vaultcraft/introduction">
                             <AppButton className={`font-bold w-full max-w-[176px]`} text={'Get Started'} />
                         </a>
                     </div>

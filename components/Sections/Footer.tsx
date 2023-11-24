@@ -9,11 +9,11 @@ export default function Footer() {
         },
         {
             label: 'Docs',
-            href: 'https://docs.pop.network/products/vaultcraft',
+            href: 'https://docs.vaultcraft.io/welcome-to-vaultcraft/introduction',
         },
         {
             label: 'SDK',
-            href: 'https://docs.pop.network/products/vaultcraft/vaultcraft-sdk',
+            href: 'https://docs.vaultcraft.io/products/vaultcraft-vci-and-sdk/sdk',
         },
     ]
 

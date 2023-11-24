@@ -54,7 +54,7 @@ export default function SDKSection() {
                 )}
                 {typingDone && (
                     <div style={{ opacity: opacity, transition: 'opacity 1000ms ease-in-out' }} className={`self-start`}>
-                        <a href="https://docs.pop.network/products/vaultcraft">
+                        <a href="https://docs.vaultcraft.io/products/vaultcraft-vci-and-sdk/sdk">
                             <AppButton className={`font-bold w-full max-w-[176px]`} text={'Start Building'} />
                         </a>
                     </div>

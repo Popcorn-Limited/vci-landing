@@ -13,11 +13,11 @@ export default function Navbar() {
             },
             {
                 label: 'SDK',
-                href: 'https://docs.pop.network/products/vaultcraft/vaultcraft-sdk',
+                href: 'https://docs.vaultcraft.io/products/vaultcraft-vci-and-sdk/sdk',
             },
             {
                 label: 'Docs',
-                href: 'https://docs.pop.network/products/vaultcraft',
+                href: 'https://docs.vaultcraft.io/welcome-to-vaultcraft/introduction',
             },
             {
                 label: 'Partner Program',
