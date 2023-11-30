@@ -51,7 +51,7 @@ export default function Footer() {
                                 {`We'd love to hear from you! Whether you're a developer, allocator, or simply curious about our platform, drop us a line and we'll be happy to connect.`}
                             </span>
                             <div className={`flex gap-2`}>
-                                <a className={`p-3 bg-[#141416] text-[#D7D7D7] hover:text-[#DFFF1C] duration-[0.25s] opacity-80 rounded-[50%]`} href="https://twitter.com/Popcorn_DAO">
+                                <a className={`p-3 bg-[#141416] text-[#D7D7D7] hover:text-[#DFFF1C] duration-[0.25s] opacity-80 rounded-[50%]`} href="https://twitter.com/VaultCraft_io/">
                                     <TwitterIcon color={'currentColor'} size={'24px'} />
                                 </a>
                             </div>

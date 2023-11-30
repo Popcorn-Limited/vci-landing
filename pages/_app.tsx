@@ -4,7 +4,6 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import "../styles/globals.css";
 import { Loader } from "@/components/Sections";
-import { Analytics } from '@vercel/analytics/react';
 
 const { title, description, socialShareImage } = {
   title: "VaultCraft - Yield your way",

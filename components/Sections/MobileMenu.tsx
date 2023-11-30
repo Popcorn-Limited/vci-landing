@@ -1,6 +1,4 @@
 import TwitterIcon from "../SVGIcons/TwitterIcon";
-import DiscordIcon from "../SVGIcons/DiscordIcon";
-import TelegramIcon from "../SVGIcons/TelegramIcon";
 
 export default function MobileMenu({
     isOpened,
@@ -54,7 +52,7 @@ export default function MobileMenu({
                             </div>
                         </div>
                         <div className={`flex gap-2`}>
-                            <a className={`p-4 bg-[#141416] opacity-80 rounded-[50%]`} href="https://twitter.com/Popcorn_DAO">
+                            <a className={`p-4 bg-[#141416] opacity-80 rounded-[50%]`} href="https://twitter.com/VaultCraft_io/">
                                 <TwitterIcon color={'#D7D7D7'} size={'24px'} />
                             </a>
                         </div>
