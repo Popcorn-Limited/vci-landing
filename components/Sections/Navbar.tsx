@@ -9,7 +9,7 @@ export default function Navbar() {
     }[] = [
             {
                 label: 'Earn',
-                href: 'https://app.pop.network/vaults',
+                href: 'https://app.vaultcraft.io/vaults',
             },
             {
                 label: 'SDK',
@@ -22,10 +22,6 @@ export default function Navbar() {
             {
                 label: 'Partner Program',
                 href: 'https://b7qv6rd6w5c.typeform.com/to/g18olMKI?typeform-source=docs.pop.network',
-            },
-            {
-                label: 'VCX Token',
-                href: '#tge',
             }
         ]
 

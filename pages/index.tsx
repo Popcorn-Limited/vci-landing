@@ -22,8 +22,6 @@ const IndexPage = ({
       <HeroSection isLoaded={isLoaded} />
       <GetStartedSection />
       <SDKSection />
-      <a id="tge"></a>
-      <TGESection />
       <a id="HowItWorks"></a>
       <CardsSection />
       <Partners />
