@@ -22,6 +22,10 @@ export default function Navbar() {
             {
                 label: 'Partner Program',
                 href: 'https://b7qv6rd6w5c.typeform.com/to/g18olMKI?typeform-source=docs.pop.network',
+            },
+            {
+                label: 'VCX',
+                href: 'https://app.balancer.fi/#/ethereum/pool/0x577a7f7ee659aa14dc16fd384b3f8078e23f1920000200000000000000000633',
             }
         ]
 
