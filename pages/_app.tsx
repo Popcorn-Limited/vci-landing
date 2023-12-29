@@ -57,6 +57,7 @@ export default function MyApp(props: any) {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={socialShareImage} />
+        <link rel="icon" type={"image/png"} href="/images/icons/favicon.ico" />
       </Head>
       {getLayout(<Component {...pageProps} />)}
       <Loader isLoading={isLoading} endLoadingAnimation={() => setLoaderAnimationDone(true)} />
